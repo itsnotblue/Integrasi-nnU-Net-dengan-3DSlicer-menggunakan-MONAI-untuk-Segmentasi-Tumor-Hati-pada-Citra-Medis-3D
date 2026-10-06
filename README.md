@@ -20,6 +20,13 @@ Model B is the current operational default, not a proven winner. Training pools 
 
 ## Run source checks
 
+Use a short checkout folder on Windows:
+
+```powershell
+git -c core.longpaths=true clone https://github.com/itsnotblue/Integrasi-nnU-Net-dengan-3DSlicer-menggunakan-MONAI-untuk-Segmentasi-Tumor-Hati-pada-Citra-Medis-3D.git liver-seg
+cd liver-seg
+```
+
 Python 3.10+ is sufficient; these checks need no models or inference dependencies.
 
 ```bash
