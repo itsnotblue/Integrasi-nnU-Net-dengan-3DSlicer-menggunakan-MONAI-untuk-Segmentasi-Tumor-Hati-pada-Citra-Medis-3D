@@ -1,0 +1,2 @@
+# Optional release/download tooling; does not replace the inference environment.
+huggingface-hub==1.2.3

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "local_candidate_not_published",
+  "source_repository": "https://github.com/itsnotblue/Integrasi-nnU-Net-dengan-3DSlicer-menggunakan-MONAI-untuk-Segmentasi-Tumor-Hati-pada-Citra-Medis-3D",
+  "source_repository_strategy": "continue_existing_history",
+  "owner_model_sharing_approved": true,
+  "source_commit": null,
+  "huggingface_repository": null,
+  "huggingface_revision": null,
+  "custom_source_license": "Apache-2.0",
+  "checkpoint_license": null,
+  "checkpoint_redistribution_confirmed": false,
+  "dataset_terms_review_reference": null
+}

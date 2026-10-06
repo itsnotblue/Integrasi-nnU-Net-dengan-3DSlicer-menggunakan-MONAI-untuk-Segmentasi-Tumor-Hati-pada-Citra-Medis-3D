@@ -1,0 +1,6 @@
+# Optional quantitative evaluation and static scientific figure tooling.
+# Verified versions from the working GPU environment on 2026-10-06.
+numpy==1.26.4
+simpleitk==2.5.3
+scipy==1.15.3
+matplotlib==3.10.8

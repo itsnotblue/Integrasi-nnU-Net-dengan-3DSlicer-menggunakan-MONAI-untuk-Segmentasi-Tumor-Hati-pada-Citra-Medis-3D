@@ -1,0 +1,11 @@
+--index-url https://download.pytorch.org/whl/cu118
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118
+torchaudio==2.7.1+cu118
+--extra-index-url https://pypi.org/simple
+monailabel==0.8.5
+monai==1.5.1
+nnunetv2==2.6.2
+simpleitk==2.5.3
+numpy==1.26.4
+requests==2.32.5

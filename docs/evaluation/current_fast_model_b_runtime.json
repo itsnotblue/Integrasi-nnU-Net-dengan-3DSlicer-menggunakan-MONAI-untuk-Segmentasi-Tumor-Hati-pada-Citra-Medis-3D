@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "report_type": "completed_cohort_inference_latency",
+  "cohort_id": "lits_121_130_retrospective_full_volume_v1",
+  "case_count": 10,
+  "manifest_sha256": "f0d75a53a1c54c5423305ac5b504e66c7204efeaeb70390842571c3f9fc00e0e",
+  "run_settings_sha256": "c0bb50bb84f50608145d304705cd8263d791120facb22a9ca71f70973021e3af",
+  "checkpoint_sha256": "280b1c6b2c8562b68803f269cb7a62fcd890430c2652af0daac578dd141e8b6b",
+  "settings": {
+    "profile": "fast",
+    "device": "cuda",
+    "tile_step_size": 0.5,
+    "threads": 2
+  },
+  "resolved_device": "cuda",
+  "candidate_profile": true,
+  "gpu": "NVIDIA GeForce GTX 1660 Ti",
+  "software": {
+    "torch": "2.7.1+cu118",
+    "nnunetv2": "2.6.2",
+    "monailabel": "0.8.5",
+    "SimpleITK": "2.5.3",
+    "numpy": "1.26.4"
+  },
+  "configuration_sha256": "af957f386f554348aec67a36c534a0a88d64567271cfca7d3d7b781ace98764e",
+  "output_hashes_verified": true,
+  "ct_or_reference_files_read": false,
+  "run_report_wall_seconds": 3122.527441,
+  "sum_recorded_case_end_to_end_seconds": 3122.458673600049,
+  "statistics_all_cases": {
+    "preprocessing_seconds": {
+      "count": 10,
+      "mean": 76.56464176001609,
+      "median": 75.39810930003296,
+      "min": 31.02674770000158,
+      "max": 107.61292590002995
+    },
+    "prediction_seconds": {
+      "count": 10,
+      "mean": 208.44961569000733,
+      "median": 197.70821085001808,
+      "min": 63.13944529998116,
+      "max": 288.7269537000102
+    },
+    "reconstruction_seconds": {
+      "count": 10,
+      "mean": 26.565432909986704,
+      "median": 23.817116949969204,
+      "min": 16.253880999982357,
+      "max": 50.194795099960174
+    },
+    "runtime_seconds_before_file_save": {
+      "count": 10,
+      "mean": 311.6138582000043,
+      "median": 301.31213890001527,
+      "min": 110.43056459998479,
+      "max": 431.970189500018
+    },
+    "end_to_end_seconds": {
+      "count": 10,
+      "mean": 312.2458673600049,
+      "median": 301.8241753500188,
+      "min": 110.84110949997557,
+      "max": 432.8487234999775
+    },
+    "outside_predict_seconds": {
+      "count": 10,
+      "mean": 0.632009160000598,
+      "median": 0.40584010002203286,
+      "min": 0.34548080002423376,
+      "max": 2.102436499961186
+    },
+    "other_runtime_seconds": {
+      "count": 10,
+      "mean": 0.0341678399941884,
+      "median": 0.03242659996612929,
+      "min": 0.010490600019693375,
+      "max": 0.054193199961446226
+    },
+    "tiles": {
+      "count": 10,
+      "mean": 532.5,
+      "median": 504.0,
+      "min": 168,
+      "max": 720
+    },
+    "peak_cuda_allocated_bytes": {
+      "count": 10,
+      "mean": 2318830694.4,
+      "median": 2094237696.0,
+      "min": 2094237696,
+      "max": 4340167680
+    },
+    "peak_cuda_allocated_gib": {
+      "count": 10,
+      "mean": 2.159579372406006,
+      "median": 1.9504108428955078,
+      "min": 1.9504108428955078,
+      "max": 4.042096138000488
+    }
+  },
+  "statistics_by_cache_state": {
+    "cold_first_new_case": {
+      "case_count": 1,
+      "metrics": {
+        "preprocessing_seconds": {
+          "count": 1,
+          "mean": 84.04714470001636,
+          "median": 84.04714470001636,
+          "min": 84.04714470001636,
+          "max": 84.04714470001636
+        },
+        "prediction_seconds": {
+          "count": 1,
+          "mean": 250.4353887999896,
+          "median": 250.4353887999896,
+          "min": 250.4353887999896,
+          "max": 250.4353887999896
+        },
+        "reconstruction_seconds": {
+          "count": 1,
+          "mean": 25.97382590000052,
+          "median": 25.97382590000052,
+          "min": 25.97382590000052,
+          "max": 25.97382590000052
+        },
+        "runtime_seconds_before_file_save": {
+          "count": 1,
+          "mean": 360.50760700000683,
+          "median": 360.50760700000683,
+          "min": 360.50760700000683,
+          "max": 360.50760700000683
+        },
+        "end_to_end_seconds": {
+          "count": 1,
+          "mean": 362.610043499968,
+          "median": 362.610043499968,
+          "min": 362.610043499968,
+          "max": 362.610043499968
+        },
+        "outside_predict_seconds": {
+          "count": 1,
+          "mean": 2.102436499961186,
+          "median": 2.102436499961186,
+          "min": 2.102436499961186,
+          "max": 2.102436499961186
+        },
+        "other_runtime_seconds": {
+          "count": 1,
+          "mean": 0.05124760000035167,
+          "median": 0.05124760000035167,
+          "min": 0.05124760000035167,
+          "max": 0.05124760000035167
+        },
+        "tiles": {
+          "count": 1,
+          "mean": 567,
+          "median": 567,
+          "min": 567,
+          "max": 567
+        },
+        "peak_cuda_allocated_bytes": {
+          "count": 1,
+          "mean": 4340167680,
+          "median": 4340167680,
+          "min": 4340167680,
+          "max": 4340167680
+        },
+        "peak_cuda_allocated_gib": {
+          "count": 1,
+          "mean": 4.042096138000488,
+          "median": 4.042096138000488,
+          "min": 4.042096138000488,
+          "max": 4.042096138000488
+        }
+      }
+    },
+    "cached_runtime_case": {
+      "case_count": 9,
+      "metrics": {
+        "preprocessing_seconds": {
+          "count": 9,
+          "mean": 75.73325254446051,
+          "median": 72.16297440003837,
+          "min": 31.02674770000158,
+          "max": 107.61292590002995
+        },
+        "prediction_seconds": {
+          "count": 9,
+          "mean": 203.7845297888982,
+          "median": 192.42340159998275,
+          "min": 63.13944529998116,
+          "max": 288.7269537000102
+        },
+        "reconstruction_seconds": {
+          "count": 9,
+          "mean": 26.63116702220739,
+          "median": 23.53129119996447,
+          "min": 16.253880999982357,
+          "max": 50.194795099960174
+        },
+        "runtime_seconds_before_file_save": {
+          "count": 9,
+          "mean": 306.1812194444485,
+          "median": 298.7244925000123,
+          "min": 110.43056459998479,
+          "max": 431.970189500018
+        },
+        "end_to_end_seconds": {
+          "count": 9,
+          "mean": 306.6498477888979,
+          "median": 299.1042569000274,
+          "min": 110.84110949997557,
+          "max": 432.8487234999775
+        },
+        "outside_predict_seconds": {
+          "count": 9,
+          "mean": 0.4686283444494216,
+          "median": 0.40113530005328357,
+          "min": 0.34548080002423376,
+          "max": 0.8785339999594726
+        },
+        "other_runtime_seconds": {
+          "count": 9,
+          "mean": 0.03227008888239248,
+          "median": 0.02955059992382303,
+          "min": 0.010490600019693375,
+          "max": 0.054193199961446226
+        },
+        "tiles": {
+          "count": 9,
+          "mean": 528.6666666666666,
+          "median": 504,
+          "min": 168,
+          "max": 720
+        },
+        "peak_cuda_allocated_bytes": {
+          "count": 9,
+          "mean": 2094237696,
+          "median": 2094237696,
+          "min": 2094237696,
+          "max": 2094237696
+        },
+        "peak_cuda_allocated_gib": {
+          "count": 9,
+          "mean": 1.9504108428955078,
+          "median": 1.9504108428955078,
+          "min": 1.9504108428955078,
+          "max": 1.9504108428955078
+        }
+      }
+    },
+    "reused_original_cache_state_unknown": {
+      "case_count": 0,
+      "metrics": {
+        "preprocessing_seconds": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "prediction_seconds": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "reconstruction_seconds": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "runtime_seconds_before_file_save": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "end_to_end_seconds": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "outside_predict_seconds": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "other_runtime_seconds": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "tiles": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "peak_cuda_allocated_bytes": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "peak_cuda_allocated_gib": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      }
+    }
+  },
+  "notes": [
+    "First non-reused case includes lazy runtime/model loading; subsequent non-reused cases use that runtime.",
+    "Reused case timings belong to prior execution; their original cold/cache status cannot be recovered from this run report.",
+    "outside_predict_seconds includes initialization (first new case), output serialization and hashing, not a separately instrumented initialization stage.",
+    "Stage timings exclude cohort input preflight and Slicer/server transport; sum of reused timings is not current run wall time.",
+    "Only JSON metadata and prediction-file bytes were read; this is an integrity/latency report, not an accuracy or decoded-image geometry evaluation.",
+    "Reports retain caller-supplied case IDs; review identifiers and redistribution rights before publication."
+  ],
+  "cases": [
+    {
+      "case_id": "LITS_121",
+      "input_sha256": "2e01564b21b7017e871f7bb37363e8f47025a72625d9ce70ccbe53343164b286",
+      "output_sha256": "f709c1aecd12ca99339a694a2c674101b7220ba7a2cd2a49aa0b0f3dd228a7b8",
+      "sidecar_sha256": "0daed045311c5b8a9c73c27445c852c103e8eada244fb897cdad4c1f324aabf9",
+      "input_size_xyz": [
+        512,
+        512,
+        424
+      ],
+      "preprocessing_seconds": 84.04714470001636,
+      "prediction_seconds": 250.4353887999896,
+      "reconstruction_seconds": 25.97382590000052,
+      "runtime_seconds_before_file_save": 360.50760700000683,
+      "end_to_end_seconds": 362.610043499968,
+      "reused": false,
+      "cache_state": "cold_first_new_case",
+      "outside_predict_seconds": 2.102436499961186,
+      "other_runtime_seconds": 0.05124760000035167,
+      "tiles": 567,
+      "peak_cuda_allocated_bytes": 4340167680,
+      "peak_cuda_allocated_gib": 4.042096138000488
+    },
+    {
+      "case_id": "LITS_122",
+      "input_sha256": "0b55f50ef49f3dc87a9fec3a169badad649552f83c26a812c6c72d46e08309df",
+      "output_sha256": "72ab57c6b55cc952ff0f29945544af2fdaa849bc537500a3f3cf797196bfdadc",
+      "sidecar_sha256": "374d881d0d9172ddf3c41ef3a73681a9fc8ee384aa46a019285d85704b18db04",
+      "input_size_xyz": [
+        512,
+        512,
+        463
+      ],
+      "preprocessing_seconds": 102.50712730002124,
+      "prediction_seconds": 288.7269537000102,
+      "reconstruction_seconds": 27.69471120001981,
+      "runtime_seconds_before_file_save": 418.9829854000127,
+      "end_to_end_seconds": 419.39680220000446,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.41381679999176413,
+      "other_runtime_seconds": 0.054193199961446226,
+      "tiles": 720,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_123",
+      "input_sha256": "4900d93c474f70e1ce23ae01e622f6ca40a8ab717188c8bacffecec7ea911e4e",
+      "output_sha256": "0f81b734009ebb2cadfda7ff8b2b488d377892ab3397f764f7ee2a8d8bbf6890",
+      "sidecar_sha256": "0968f2428d8dca53675b0e9c71d41d4f8617d09a9c30fbdea03ef36507c1fec7",
+      "input_size_xyz": [
+        512,
+        512,
+        422
+      ],
+      "preprocessing_seconds": 72.16297440003837,
+      "prediction_seconds": 202.9930201000534,
+      "reconstruction_seconds": 23.53129119996447,
+      "runtime_seconds_before_file_save": 298.7244925000123,
+      "end_to_end_seconds": 299.1042569000274,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.37976440001511946,
+      "other_runtime_seconds": 0.037206799956038594,
+      "tiles": 504,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_124",
+      "input_sha256": "3eda113a62fe642218d849a74a124d055512e7095a860a3e3ff28e8ffd6d7a43",
+      "output_sha256": "69f13334c4a9b489a544d5ff1483da691432f52ae7e35edbf2e03f204bffd5cd",
+      "sidecar_sha256": "f98bff9e859a9c27987c1a2e857893786675ec5e17dfb2f3ebd769f21e43af9f",
+      "input_size_xyz": [
+        512,
+        512,
+        432
+      ],
+      "preprocessing_seconds": 84.58136279997416,
+      "prediction_seconds": 239.19965280004544,
+      "reconstruction_seconds": 24.102942699973937,
+      "runtime_seconds_before_file_save": 347.919260900002,
+      "end_to_end_seconds": 348.32039620005526,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.40113530005328357,
+      "other_runtime_seconds": 0.03530260000843555,
+      "tiles": 630,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_125",
+      "input_sha256": "393378ee2ea18fe316773d28aac53134969d6175e84019c36788b6e08e165dbc",
+      "output_sha256": "a4ae67a2ee32215c5e9e4c0a4cf582d86acbc81500be7060a6434dbfdd81da2d",
+      "sidecar_sha256": "149961e3284c62f5f4a223accbc1a5daf8db36e6a0ac909c0c107f9a2d03277f",
+      "input_size_xyz": [
+        512,
+        512,
+        407
+      ],
+      "preprocessing_seconds": 70.04392650001682,
+      "prediction_seconds": 191.22969220002415,
+      "reconstruction_seconds": 22.161114200018346,
+      "runtime_seconds_before_file_save": 283.46234229998663,
+      "end_to_end_seconds": 283.80782310001086,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.34548080002423376,
+      "other_runtime_seconds": 0.02760939992731437,
+      "tiles": 504,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_126",
+      "input_sha256": "852ee97615f39dd5ff4db86b156f21b216402efd3cf266eed8e92af480fdc679",
+      "output_sha256": "3224428e61c006400b20f25eaeedac84562ca06b76d5ccc36a8882893be7c340",
+      "sidecar_sha256": "c9923814a1eb5b19b5a2a80343541748fe535d6e61919f3804347ab3d76eb191",
+      "input_size_xyz": [
+        512,
+        512,
+        410
+      ],
+      "preprocessing_seconds": 72.1479674000293,
+      "prediction_seconds": 191.23811090004165,
+      "reconstruction_seconds": 22.01518320001196,
+      "runtime_seconds_before_file_save": 285.43081210000673,
+      "end_to_end_seconds": 285.7924184000003,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.36160629999358207,
+      "other_runtime_seconds": 0.02955059992382303,
+      "tiles": 504,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_127",
+      "input_sha256": "fa5a30f26706be6146ac18a58575ac930821f702238de16bc831fc9089664bd7",
+      "output_sha256": "6a3a0b3b86d8058503e85bc47e79d7748c523b52c4180aa0fa9a37954c9b8631",
+      "sidecar_sha256": "305bfaa7086ab98b288a9332f6c7db3ee19e19e68f87c8689261d6fc61def691",
+      "input_size_xyz": [
+        512,
+        512,
+        401
+      ],
+      "preprocessing_seconds": 62.882996700005606,
+      "prediction_seconds": 190.9918037999887,
+      "reconstruction_seconds": 20.909417399961967,
+      "runtime_seconds_before_file_save": 274.81054239999503,
+      "end_to_end_seconds": 275.1930065000197,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.3824641000246629,
+      "other_runtime_seconds": 0.026324500038754195,
+      "tiles": 504,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_128",
+      "input_sha256": "082f475e1ce6af78109a0074c3030aeb4dccdd0bdac6974cadcaf5f20c7a9007",
+      "output_sha256": "9b4eb89034b759e13649f52c57481ef185bbd04b5dfc9951ec25392131865777",
+      "sidecar_sha256": "f508e2830721c5d8603acbec626c613d83f3060b69a3337457c0aeedcff0dcb4",
+      "input_size_xyz": [
+        512,
+        512,
+        987
+      ],
+      "preprocessing_seconds": 107.61292590002995,
+      "prediction_seconds": 274.11868769995635,
+      "reconstruction_seconds": 50.194795099960174,
+      "runtime_seconds_before_file_save": 431.970189500018,
+      "end_to_end_seconds": 432.8487234999775,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.8785339999594726,
+      "other_runtime_seconds": 0.043780800071544945,
+      "tiles": 720,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_129",
+      "input_sha256": "426c53bc215f29a7fe1230a696e7320a6dcd72b60e7edb5ffd88011fc8aa62c8",
+      "output_sha256": "642e6dee7ef6689cb695dc18fef17ae9c7cc878e0c18a7c4971727ce7a38dc0c",
+      "sidecar_sha256": "d489e1370279edbaed43852a92bc9eaf7219896c85e1d029902a637c03530bcb",
+      "input_size_xyz": [
+        512,
+        512,
+        654
+      ],
+      "preprocessing_seconds": 78.63324420002755,
+      "prediction_seconds": 192.42340159998275,
+      "reconstruction_seconds": 32.81716719997348,
+      "runtime_seconds_before_file_save": 303.89978530001827,
+      "end_to_end_seconds": 304.54409380001016,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.6443084999918938,
+      "other_runtime_seconds": 0.025972300034482032,
+      "tiles": 504,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    },
+    {
+      "case_id": "LITS_130",
+      "input_sha256": "d54dfe230e03516c1cbdbe6b4ce8ebdede79fdbd4e1ef13370e295a429f1c5e9",
+      "output_sha256": "5cad0e031a91134e3e128d46b8485809034346f2f73f1a0fa8f1c646a9fd2216",
+      "sidecar_sha256": "aa1df402d947d317ee32da8ee24ef14f87b11bc1dbef10b474d2e80cc1313e02",
+      "input_size_xyz": [
+        512,
+        512,
+        338
+      ],
+      "preprocessing_seconds": 31.02674770000158,
+      "prediction_seconds": 63.13944529998116,
+      "reconstruction_seconds": 16.253880999982357,
+      "runtime_seconds_before_file_save": 110.43056459998479,
+      "end_to_end_seconds": 110.84110949997557,
+      "reused": false,
+      "cache_state": "cached_runtime_case",
+      "outside_predict_seconds": 0.41054489999078214,
+      "other_runtime_seconds": 0.010490600019693375,
+      "tiles": 168,
+      "peak_cuda_allocated_bytes": 2094237696,
+      "peak_cuda_allocated_gib": 1.9504108428955078
+    }
+  ]
+}

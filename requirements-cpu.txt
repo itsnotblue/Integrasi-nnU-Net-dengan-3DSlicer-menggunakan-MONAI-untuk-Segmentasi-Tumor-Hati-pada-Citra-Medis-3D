@@ -1,0 +1,11 @@
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.9.1+cpu
+torchvision==0.24.1+cpu
+torchaudio==2.9.1+cpu
+--extra-index-url https://pypi.org/simple
+monailabel==0.8.5
+monai==1.5.1
+nnunetv2==2.6.2
+simpleitk==2.5.3
+numpy==1.26.4
+requests==2.32.5

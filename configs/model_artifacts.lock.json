@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "Exact local release candidate runtime artifacts; all paths are relative to the model root.",
+  "artifacts": [
+    {"path":"model_a/dataset_fingerprint.json","size":2158,"sha256":"70757cf38a78abac561269f3e3fd2034af2f55d8205b5bf77c3075a414f2e4dc"},
+    {"path":"model_a/dataset.json","size":255,"sha256":"65a55a83108631a728d5c997903083d756df7d57203654b6334219c5451b0731"},
+    {"path":"model_a/plans.json","size":16822,"sha256":"aade535e17643350dcd7628d9f1eac4947dc86ee2a38955097bd6e52576966f2"},
+    {"path":"model_a/fold_0/checkpoint_best.pth","size":249696499,"sha256":"1f351e480a0846b60898ee474046b0a934580c0ddfe2447ac776949caab215c2"},
+    {"path":"model_b/dataset_fingerprint.json","size":20228,"sha256":"1fbe031fdd98760fdab9e7c5568881fa3e494a5f016d3dfd22d498f322c1e4a4"},
+    {"path":"model_b/dataset.json","size":244,"sha256":"2eeb8485ae1e1236871eac835aece8b9abc619b5e1d09fbfe3f347752b14f1e3"},
+    {"path":"model_b/plans.json","size":16311,"sha256":"07d80094e9b107bbd37ca322ed1fa2aa213ceac5097e6c87da299db0581ec035"},
+    {"path":"model_b/fold_0/checkpoint_best.pth","size":246460735,"sha256":"280b1c6b2c8562b68803f269cb7a62fcd890430c2652af0daac578dd141e8b6b"},
+    {"path":"model_c/dataset_fingerprint.json","size":1263,"sha256":"d94803c08c2cace85d889b5fe591e7e416402e373a4306677f2e6dd304ca6f7e"},
+    {"path":"model_c/dataset.json","size":242,"sha256":"571bd65a055dd68a0143aee391d25bf097ca3e18dad4bb58c0b58be12b7b5e38"},
+    {"path":"model_c/plans.json","size":16311,"sha256":"ee575710544a78591e468d4feb3369b86efb03b6d4feba9fe27d0f897bf0768c"},
+    {"path":"model_c/fold_0/checkpoint_best.pth","size":246418687,"sha256":"0bbae64daba99a0c251d227419f9aec4687aa6b87fd963e1cd7239f481818036"}
+  ]
+}

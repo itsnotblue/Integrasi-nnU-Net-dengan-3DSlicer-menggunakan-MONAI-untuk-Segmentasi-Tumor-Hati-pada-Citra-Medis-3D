@@ -1,0 +1,39 @@
+name: Source and release-tool safety
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-safety:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.10'
+      - name: Check tracked-source privacy and inventory
+        run: python scripts/prepare_publication.py check-source
+      - name: Check documentation links and navigation
+        run: python -m unittest discover -s tests -p test_documentation.py -v
+      - name: Test model-integrity tools without real weights
+        run: python -m unittest discover -s tests -p test_release_artifacts.py -v
+      - name: Test source-package protections
+        run: python -m unittest discover -s tests -p test_source_package.py -v
+      - name: Test local publication preparation
+        run: python -m unittest discover -s tests -p test_prepare_publication.py -v
+      - name: Test inference-latency provenance tools
+        run: python -m unittest discover -s tests -p test_inference_latency.py -v
+      - name: Compile source
+        run: python -m compileall -q app scripts tests

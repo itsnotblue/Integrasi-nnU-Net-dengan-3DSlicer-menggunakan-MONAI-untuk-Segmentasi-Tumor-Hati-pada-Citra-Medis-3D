@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the exact source release and model revision, and the associated university thesis."
+type: software
+license: Apache-2.0
+title: "Liver Tumor Segmentation with nnU-Net, MONAI Label, and 3D Slicer"
+authors:
+  - family-names: Rahman
+    given-names: Muhammad Hamdi Kurnia
+repository-code: "https://github.com/itsnotblue/Integrasi-nnU-Net-dengan-3DSlicer-menggunakan-MONAI-untuk-Segmentasi-Tumor-Hati-pada-Citra-Medis-3D"
+abstract: "Research software for liver and lesion segmentation using three nnU-Net v2 checkpoints through MONAI Label and 3D Slicer."
+keywords:
+  - liver segmentation
+  - tumor segmentation
+  - medical imaging
+  - nnU-Net
+  - MONAI Label
+  - 3D Slicer

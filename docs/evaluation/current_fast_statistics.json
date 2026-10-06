@@ -1,0 +1,1839 @@
+{
+  "schema_version": 1,
+  "analysis_kind": "current_pinned_fast_complete_volume_retrospective_audit",
+  "cohort_id": "lits_121_130_retrospective_full_volume_v1",
+  "manifest_sha256": "f0d75a53a1c54c5423305ac5b504e66c7204efeaeb70390842571c3f9fc00e0e",
+  "held_out_certified": false,
+  "limitations": [
+    "Previously exposed internal thesis test cases; not a new untouched or external test.",
+    "Historical comparator checkpoint identity is unknown; this is not a controlled same-weights fast-versus-reference equivalence experiment.",
+    "26-connected annotation islands are engineering components, not adjudicated distinct clinical lesions.",
+    "No retraining, annotation-derived inference ROI, equivalence, superiority or clinical-readiness claim."
+  ],
+  "current": {
+    "model": "model_b",
+    "checkpoint_sha256": "280b1c6b2c8562b68803f269cb7a62fcd890430c2652af0daac578dd141e8b6b",
+    "checkpoint_attribution": "verified_prediction_sidecars",
+    "current_provenance_verified_all_cases": true,
+    "completed_cohort_run_verified": true,
+    "inference_settings": {
+      "profile": "fast",
+      "device": "cuda",
+      "use_mirroring": false,
+      "tile_step_size": 0.5,
+      "threads": 2
+    },
+    "cohort_run_sha256": "c0bb50bb84f50608145d304705cd8263d791120facb22a9ca71f70973021e3af",
+    "software": {
+      "python": "3.10.19",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "simpleitk": "2.5.3"
+    },
+    "summary": {
+      "cases": 10,
+      "tumor_reference_positive_cases": 10,
+      "classes": {
+        "liver_label_1": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8840064093002586,
+            "sample_sd": 0.04646160602255412,
+            "median": 0.8835153586070534,
+            "q25": 0.8741169786854492,
+            "q75": 0.919067971645478,
+            "mean_ci95": [
+              0.8544740532316865,
+              0.9102845545234692
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.7948323018030776,
+            "sample_sd": 0.07234325212252422,
+            "median": 0.7913504231194122,
+            "q25": 0.7763884504457415,
+            "q75": 0.8504722539723958,
+            "mean_ci95": [
+              0.7498589048565184,
+              0.8364820568294824
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8072280790211316,
+            "sample_sd": 0.07413135777816524,
+            "median": 0.8038458858106324,
+            "q25": 0.7904365015234944,
+            "q75": 0.8601646771509395,
+            "mean_ci95": [
+              0.7603064977370539,
+              0.849851951913829
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9811102106907729,
+            "sample_sd": 0.0076237733438669015,
+            "median": 0.9822612017509332,
+            "q25": 0.9747551607777758,
+            "q75": 0.986763631826849,
+            "mean_ci95": [
+              0.9770258071856232,
+              0.9855266220317929
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 92.82446536750031,
+            "sample_sd": 55.18695424063318,
+            "median": 81.22610384599321,
+            "q25": 57.79061413710964,
+            "q75": 121.748703071369,
+            "mean_ci95": [
+              60.78459244400733,
+              124.51892128686227
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 14.636105257188959,
+            "sample_sd": 9.850648763561368,
+            "median": 11.02108486923565,
+            "q25": 7.592108187844133,
+            "q75": 19.521723265385965,
+            "mean_ci95": [
+              9.340021146703675,
+              20.880871266219703
+            ]
+          }
+        },
+        "tumor_label_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5303742223158292,
+            "sample_sd": 0.36144329279857823,
+            "median": 0.707344634409103,
+            "q25": 0.20048801542742123,
+            "q75": 0.8149498125923184,
+            "mean_ci95": [
+              0.3076389576701583,
+              0.7341427110655028
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4301524289515822,
+            "sample_sd": 0.3153175222598381,
+            "median": 0.5501704633792919,
+            "q25": 0.1191957026814941,
+            "q75": 0.6886557189186973,
+            "mean_ci95": [
+              0.24313693643464476,
+              0.6132766687370649
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5481678201924813,
+            "sample_sd": 0.3829606075317784,
+            "median": 0.6434040901354905,
+            "q25": 0.2013306670000164,
+            "q75": 0.8319247930596625,
+            "mean_ci95": [
+              0.31261735983570804,
+              0.7576626452489131
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5905834404771156,
+            "sample_sd": 0.34880354044176315,
+            "median": 0.7685692489615038,
+            "q25": 0.426360088535307,
+            "q75": 0.80261019307802,
+            "mean_ci95": [
+              0.37273156176652694,
+              0.7774804035477414
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 106.87458138873444,
+            "sample_sd": 112.19299762028305,
+            "median": 82.62666687255086,
+            "q25": 33.89148893654784,
+            "q75": 144.65870520934934,
+            "mean_ci95": [
+              47.079268930029194,
+              179.3264005354294
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 58.9456024997241,
+            "sample_sd": 108.79120907448772,
+            "median": 13.356016017156076,
+            "q25": 5.802217348152405,
+            "q75": 53.69305920813366,
+            "mean_ci95": [
+              11.077913768427747,
+              132.88602289593587
+            ]
+          }
+        },
+        "liver_region_1_or_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8907133880535536,
+            "sample_sd": 0.05170424232638923,
+            "median": 0.8867109533842877,
+            "q25": 0.8810915291953677,
+            "q75": 0.930059824560164,
+            "mean_ci95": [
+              0.8574988259731458,
+              0.9197049258882698
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8063540334927239,
+            "sample_sd": 0.08103507099459067,
+            "median": 0.7964786524215446,
+            "q25": 0.7874702779789471,
+            "q75": 0.869738649107127,
+            "mean_ci95": [
+              0.7552549550372034,
+              0.8528121739153925
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8166350932623458,
+            "sample_sd": 0.08321685928407796,
+            "median": 0.8035531251877753,
+            "q25": 0.7970304610499835,
+            "q75": 0.8809979257187702,
+            "mean_ci95": [
+              0.7642540258478902,
+              0.8646932264288363
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9847390929075444,
+            "sample_sd": 0.004156132015325326,
+            "median": 0.9840830485032643,
+            "q25": 0.9813268705637618,
+            "q75": 0.9876311778728656,
+            "mean_ci95": [
+              0.9823864005644627,
+              0.9872939897806123
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 112.2844240700613,
+            "sample_sd": 69.38835237140512,
+            "median": 86.15933632234504,
+            "q25": 61.42229514673796,
+            "q75": 155.34695778392344,
+            "mean_ci95": [
+              73.56209160696424,
+              155.4777066480228
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 16.345902331746217,
+            "sample_sd": 10.314010734435639,
+            "median": 12.114049978930995,
+            "q25": 8.744279467158316,
+            "q75": 24.673443068361465,
+            "mean_ci95": [
+              10.470519421230703,
+              22.738380146703822
+            ]
+          }
+        },
+        "tumor_label_2_reference_positive_cases": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5303742223158292,
+            "sample_sd": 0.36144329279857823,
+            "median": 0.707344634409103,
+            "q25": 0.20048801542742123,
+            "q75": 0.8149498125923184,
+            "mean_ci95": [
+              0.3076389576701583,
+              0.7341427110655028
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4301524289515822,
+            "sample_sd": 0.3153175222598381,
+            "median": 0.5501704633792919,
+            "q25": 0.1191957026814941,
+            "q75": 0.6886557189186973,
+            "mean_ci95": [
+              0.24313693643464476,
+              0.6132766687370649
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5481678201924813,
+            "sample_sd": 0.3829606075317784,
+            "median": 0.6434040901354905,
+            "q25": 0.2013306670000164,
+            "q75": 0.8319247930596625,
+            "mean_ci95": [
+              0.31261735983570804,
+              0.7576626452489131
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5905834404771156,
+            "sample_sd": 0.34880354044176315,
+            "median": 0.7685692489615038,
+            "q25": 0.426360088535307,
+            "q75": 0.80261019307802,
+            "mean_ci95": [
+              0.37273156176652694,
+              0.7774804035477414
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 106.87458138873444,
+            "sample_sd": 112.19299762028305,
+            "median": 82.62666687255086,
+            "q25": 33.89148893654784,
+            "q75": 144.65870520934934,
+            "mean_ci95": [
+              47.079268930029194,
+              179.3264005354294
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 58.9456024997241,
+            "sample_sd": 108.79120907448772,
+            "median": 13.356016017156076,
+            "q25": 5.802217348152405,
+            "q75": 53.69305920813366,
+            "mean_ci95": [
+              11.077913768427747,
+              132.88602289593587
+            ]
+          }
+        }
+      },
+      "lesions": {
+        "reference_lesions": 69,
+        "predicted_lesions": 138,
+        "matched_lesions": 42,
+        "missed_lesions": 27,
+        "false_positive_lesions": 96,
+        "pooled_lesion_recall": 0.6086956521739131,
+        "pooled_lesion_precision": 0.30434782608695654,
+        "pooled_lesion_recall_ci95": [
+          0.4339240183579806,
+          0.838764662756598
+        ],
+        "pooled_lesion_precision_ci95": [
+          0.18082619011174042,
+          0.41026119402985073
+        ]
+      }
+    },
+    "per_case": [
+      {
+        "case_id": "LITS_121",
+        "prediction_sha256": "f709c1aecd12ca99339a694a2c674101b7220ba7a2cd2a49aa0b0f3dd228a7b8",
+        "prediction_sidecar_sha256": "0daed045311c5b8a9c73c27445c852c103e8eada244fb897cdad4c1f324aabf9",
+        "end_to_end_seconds": 362.610043499968,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.7809892969624121,
+            "iou": 0.6406746840009744,
+            "precision": 0.6495846770999929,
+            "recall": 0.9790393767571898,
+            "prediction_voxels": 2878724,
+            "reference_voxels": 1910010,
+            "true_positive_voxels": 1869975,
+            "false_positive_voxels": 1008749,
+            "false_negative_voxels": 40035,
+            "prediction_volume_ml": 2391.1196969833372,
+            "reference_volume_ml": 1586.4885040855409,
+            "empty_status": "neither_empty",
+            "hd95_mm": 186.74060154440767,
+            "assd_mm": 35.20969095424071,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.11791840853394839,
+            "iou": 0.0626531862745098,
+            "precision": 0.06376775440839427,
+            "recall": 0.7818772701204358,
+            "prediction_voxels": 64139,
+            "reference_voxels": 5231,
+            "true_positive_voxels": 4090,
+            "false_positive_voxels": 60049,
+            "false_negative_voxels": 1141,
+            "prediction_volume_ml": 53.275001787185666,
+            "reference_volume_ml": 4.344962259292602,
+            "empty_status": "neither_empty",
+            "hd95_mm": 165.76160261924275,
+            "assd_mm": 103.85748215418326,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.7726281693434311,
+            "iou": 0.62949804618713,
+            "precision": 0.6377306724777878,
+            "recall": 0.979904878811596,
+            "prediction_voxels": 2942863,
+            "reference_voxels": 1915241,
+            "true_positive_voxels": 1876754,
+            "false_positive_voxels": 1066109,
+            "false_negative_voxels": 38487,
+            "prediction_volume_ml": 2444.394698770523,
+            "reference_volume_ml": 1590.8334663448334,
+            "empty_status": "neither_empty",
+            "hd95_mm": 187.06619931994405,
+            "assd_mm": 34.516861164161504,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 6,
+          "predicted_lesions": 21,
+          "matched_lesions": 3,
+          "missed_lesions": 3,
+          "false_positive_lesions": 18,
+          "lesion_recall": 0.5,
+          "lesion_precision": 0.14285714285714285,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_122",
+        "prediction_sha256": "72ab57c6b55cc952ff0f29945544af2fdaa849bc537500a3f3cf797196bfdadc",
+        "prediction_sidecar_sha256": "374d881d0d9172ddf3c41ef3a73681a9fc8ee384aa46a019285d85704b18db04",
+        "end_to_end_seconds": 419.39680220000446,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.873030749193046,
+            "iou": 0.7746713129643262,
+            "precision": 0.793120936643252,
+            "recall": 0.9708471196358055,
+            "prediction_voxels": 2332585,
+            "reference_voxels": 1905575,
+            "true_positive_voxels": 1850022,
+            "false_positive_voxels": 482563,
+            "false_negative_voxels": 55553,
+            "prediction_volume_ml": 2210.9434471035,
+            "reference_volume_ml": 1806.2015142917633,
+            "empty_status": "neither_empty",
+            "hd95_mm": 122.8563507280882,
+            "assd_mm": 18.713113968780196,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "prediction_voxels": 24189,
+            "reference_voxels": 2123,
+            "true_positive_voxels": 0,
+            "false_positive_voxels": 24189,
+            "false_negative_voxels": 2123,
+            "prediction_volume_ml": 22.927572217941282,
+            "reference_volume_ml": 2.0122880573272703,
+            "empty_status": "neither_empty",
+            "hd95_mm": 133.58874176038347,
+            "assd_mm": 63.93245900810544,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.8792882213788717,
+            "iou": 0.7845801553551147,
+            "precision": 0.7955153951969939,
+            "recall": 0.9827813417008352,
+            "prediction_voxels": 2356774,
+            "reference_voxels": 1907698,
+            "true_positive_voxels": 1874850,
+            "false_positive_voxels": 481924,
+            "false_negative_voxels": 32848,
+            "prediction_volume_ml": 2233.8710193214415,
+            "reference_volume_ml": 1808.2138023490907,
+            "empty_status": "neither_empty",
+            "hd95_mm": 124.61358977553124,
+            "assd_mm": 19.02472061556584,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 3,
+          "predicted_lesions": 15,
+          "matched_lesions": 0,
+          "missed_lesions": 3,
+          "false_positive_lesions": 15,
+          "lesion_recall": 0.0,
+          "lesion_precision": 0.0,
+          "case_tumor_detected": false
+        },
+        "failure_flags": [
+          "complete_tumor_miss",
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_123",
+        "prediction_sha256": "0f81b734009ebb2cadfda7ff8b2b488d377892ab3397f764f7ee2a8d8bbf6890",
+        "prediction_sidecar_sha256": "0968f2428d8dca53675b0e9c71d41d4f8617d09a9c30fbdea03ef36507c1fec7",
+        "end_to_end_seconds": 299.1042569000274,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.8467853956181399,
+            "iou": 0.7342825805367158,
+            "precision": 0.7458650829128418,
+            "recall": 0.979289527549564,
+            "prediction_voxels": 2331002,
+            "reference_voxels": 1775382,
+            "true_positive_voxels": 1738613,
+            "false_positive_voxels": 592389,
+            "false_negative_voxels": 36769,
+            "prediction_volume_ml": 1662.0473568992616,
+            "reference_volume_ml": 1265.8800638465882,
+            "empty_status": "neither_empty",
+            "hd95_mm": 163.4190409276025,
+            "assd_mm": 24.62786087776843,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.4481968361078397,
+            "iou": 0.288823251902447,
+            "precision": 0.6140194047748828,
+            "recall": 0.35289400147864114,
+            "prediction_voxels": 45865,
+            "reference_voxels": 79803,
+            "true_positive_voxels": 28162,
+            "false_positive_voxels": 17703,
+            "false_negative_voxels": 51641,
+            "prediction_volume_ml": 32.702589712142945,
+            "reference_volume_ml": 56.90100876045227,
+            "empty_status": "neither_empty",
+            "hd95_mm": 38.17129437088268,
+            "assd_mm": 9.929968371872715,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.8601709052724305,
+            "iou": 0.7546490164633145,
+            "precision": 0.765774441733593,
+            "recall": 0.9811118567690015,
+            "prediction_voxels": 2376867,
+            "reference_voxels": 1855185,
+            "true_positive_voxels": 1820144,
+            "false_positive_voxels": 556723,
+            "false_negative_voxels": 35041,
+            "prediction_volume_ml": 1694.7499466114043,
+            "reference_volume_ml": 1322.7810726070404,
+            "empty_status": "neither_empty",
+            "hd95_mm": 165.59141378672084,
+            "assd_mm": 26.55635055262667,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 17,
+          "predicted_lesions": 15,
+          "matched_lesions": 7,
+          "missed_lesions": 10,
+          "false_positive_lesions": 8,
+          "lesion_recall": 0.4117647058823529,
+          "lesion_precision": 0.4666666666666667,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_124",
+        "prediction_sha256": "69f13334c4a9b489a544d5ff1483da691432f52ae7e35edbf2e03f204bffd5cd",
+        "prediction_sidecar_sha256": "f98bff9e859a9c27987c1a2e857893786675ec5e17dfb2f3ebd769f21e43af9f",
+        "end_to_end_seconds": 348.32039620005526,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.8804339166666242,
+            "iou": 0.7864063852713689,
+            "precision": 0.8037271588244781,
+            "recall": 0.9733270887846378,
+            "prediction_voxels": 3224440,
+            "reference_voxels": 2662589,
+            "true_positive_voxels": 2591570,
+            "false_positive_voxels": 632870,
+            "false_negative_voxels": 71019,
+            "prediction_volume_ml": 2706.469798049927,
+            "reference_volume_ml": 2234.8738736400605,
+            "empty_status": "neither_empty",
+            "hd95_mm": 75.53805565620384,
+            "assd_mm": 10.282315798257537,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.8315195937701859,
+            "iou": 0.7116247643836353,
+            "precision": 0.8518600215987684,
+            "recall": 0.8121278767672431,
+            "prediction_voxels": 217605,
+            "reference_voxels": 228251,
+            "true_positive_voxels": 185369,
+            "false_positive_voxels": 32236,
+            "false_negative_voxels": 42882,
+            "prediction_volume_ml": 182.64919192314147,
+            "reference_volume_ml": 191.58503116035462,
+            "empty_status": "neither_empty",
+            "hd95_mm": 5.651773103645253,
+            "assd_mm": 2.292043583364291,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.9002408854732085,
+            "iou": 0.8185800631991739,
+            "precision": 0.8281591321438273,
+            "recall": 0.9860666795810215,
+            "prediction_voxels": 3442045,
+            "reference_voxels": 2890840,
+            "true_positive_voxels": 2850561,
+            "false_positive_voxels": 591484,
+            "false_negative_voxels": 40279,
+            "prediction_volume_ml": 2889.1189899730684,
+            "reference_volume_ml": 2426.458904800415,
+            "empty_status": "neither_empty",
+            "hd95_mm": 85.05831631078254,
+            "assd_mm": 12.356352324384806,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 5,
+          "predicted_lesions": 13,
+          "matched_lesions": 5,
+          "missed_lesions": 0,
+          "false_positive_lesions": 8,
+          "lesion_recall": 1.0,
+          "lesion_precision": 0.38461538461538464,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_125",
+        "prediction_sha256": "a4ae67a2ee32215c5e9e4c0a4cf582d86acbc81500be7060a6434dbfdd81da2d",
+        "prediction_sidecar_sha256": "149961e3284c62f5f4a223accbc1a5daf8db36e6a0ac909c0c107f9a2d03277f",
+        "end_to_end_seconds": 283.80782310001086,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.8773756671626589,
+            "iou": 0.7815398628899872,
+            "precision": 0.7895416898169085,
+            "recall": 0.9871983085611531,
+            "prediction_voxels": 1780039,
+            "reference_voxels": 1423640,
+            "true_positive_voxels": 1405415,
+            "false_positive_voxels": 374624,
+            "false_negative_voxels": 18225,
+            "prediction_volume_ml": 1305.4099181900024,
+            "reference_volume_ml": 1044.0410440063476,
+            "empty_status": "neither_empty",
+            "hd95_mm": 55.41538279967088,
+            "assd_mm": 7.061057694372673,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.8598348398122979,
+            "iou": 0.7541318309276752,
+            "precision": 0.9168172178147828,
+            "recall": 0.8095211673972147,
+            "prediction_voxels": 63655,
+            "reference_voxels": 72092,
+            "true_positive_voxels": 58360,
+            "false_positive_voxels": 5295,
+            "false_negative_voxels": 13732,
+            "prediction_volume_ml": 46.68204929351807,
+            "reference_volume_ml": 52.86941006469726,
+            "empty_status": "neither_empty",
+            "hd95_mm": 36.025330489561696,
+            "assd_mm": 8.416502587395273,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.8865014526448557,
+            "iou": 0.796140645850444,
+            "precision": 0.8028463508586566,
+            "recall": 0.9896177924922379,
+            "prediction_voxels": 1843694,
+            "reference_voxels": 1495732,
+            "true_positive_voxels": 1480203,
+            "false_positive_voxels": 363491,
+            "false_negative_voxels": 15529,
+            "prediction_volume_ml": 1352.0919674835204,
+            "reference_volume_ml": 1096.910454071045,
+            "empty_status": "neither_empty",
+            "hd95_mm": 59.07073988177788,
+            "assd_mm": 8.585990028479644,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 14,
+          "predicted_lesions": 23,
+          "matched_lesions": 6,
+          "missed_lesions": 8,
+          "false_positive_lesions": 17,
+          "lesion_recall": 0.42857142857142855,
+          "lesion_precision": 0.2608695652173913,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_126",
+        "prediction_sha256": "3224428e61c006400b20f25eaeedac84562ca06b76d5ccc36a8882893be7c340",
+        "prediction_sidecar_sha256": "c9923814a1eb5b19b5a2a80343541748fe535d6e61919f3804347ab3d76eb191",
+        "end_to_end_seconds": 285.7924184000003,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.9399231343390702,
+            "iou": 0.8866556424217907,
+            "precision": 0.8985976484956917,
+            "recall": 0.9852328759523025,
+            "prediction_voxels": 2331869,
+            "reference_voxels": 2126819,
+            "true_positive_voxels": 2095412,
+            "false_positive_voxels": 236457,
+            "false_negative_voxels": 31407,
+            "prediction_volume_ml": 1777.6293612957002,
+            "reference_volume_ml": 1621.3157345294953,
+            "empty_status": "neither_empty",
+            "hd95_mm": 64.91630814942592,
+            "assd_mm": 9.18525966825851,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.7639034627492131,
+            "iou": 0.6179966044142614,
+            "precision": 0.6319444444444444,
+            "recall": 0.9655172413793104,
+            "prediction_voxels": 1152,
+            "reference_voxels": 754,
+            "true_positive_voxels": 728,
+            "false_positive_voxels": 424,
+            "false_negative_voxels": 26,
+            "prediction_volume_ml": 0.878192138671875,
+            "reference_volume_ml": 0.5747889518737793,
+            "empty_status": "neither_empty",
+            "hd95_mm": 148.34869302567128,
+            "assd_mm": 16.782063662439437,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.9399994709224825,
+            "iou": 0.8867915110764446,
+            "precision": 0.8986108569104179,
+            "recall": 0.9853847553056934,
+            "prediction_voxels": 2333021,
+            "reference_voxels": 2127573,
+            "true_positive_voxels": 2096478,
+            "false_positive_voxels": 236543,
+            "false_negative_voxels": 31095,
+            "prediction_volume_ml": 1778.5075534343719,
+            "reference_volume_ml": 1621.890523481369,
+            "empty_status": "neither_empty",
+            "hd95_mm": 64.93894888874976,
+            "assd_mm": 9.21914778319433,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 5,
+          "matched_lesions": 1,
+          "missed_lesions": 0,
+          "false_positive_lesions": 4,
+          "lesion_recall": 1.0,
+          "lesion_precision": 0.2,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_127",
+        "prediction_sha256": "6a3a0b3b86d8058503e85bc47e79d7748c523b52c4180aa0fa9a37954c9b8631",
+        "prediction_sidecar_sha256": "305bfaa7086ab98b288a9332f6c7db3ee19e19e68f87c8689261d6fc61def691",
+        "end_to_end_seconds": 275.1930065000197,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.8865968005474826,
+            "iou": 0.7962944609674554,
+            "precision": 0.8039646127967868,
+            "recall": 0.9881608377905395,
+            "prediction_voxels": 3267961,
+            "reference_voxels": 2658803,
+            "true_positive_voxels": 2627325,
+            "false_positive_voxels": 640636,
+            "false_negative_voxels": 31478,
+            "prediction_volume_ml": 2161.653279876709,
+            "reference_volume_ml": 1758.7144477844238,
+            "empty_status": "neither_empty",
+            "hd95_mm": 86.91415203578256,
+            "assd_mm": 11.759853940213764,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.6507858060689928,
+            "iou": 0.48234432234432234,
+            "precision": 0.6548637358265367,
+            "recall": 0.6467583497053045,
+            "prediction_voxels": 5027,
+            "reference_voxels": 5090,
+            "true_positive_voxels": 3292,
+            "false_positive_voxels": 1735,
+            "false_negative_voxels": 1798,
+            "prediction_volume_ml": 3.3252021789550783,
+            "reference_volume_ml": 3.3668746948242188,
+            "empty_status": "neither_empty",
+            "hd95_mm": 127.08203937421904,
+            "assd_mm": 22.974859808218312,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.8867730378964982,
+            "iou": 0.7965788361978703,
+            "precision": 0.804259899516894,
+            "recall": 0.9881526773034803,
+            "prediction_voxels": 3272988,
+            "reference_voxels": 2663893,
+            "true_positive_voxels": 2632333,
+            "false_positive_voxels": 640655,
+            "false_negative_voxels": 31560,
+            "prediction_volume_ml": 2164.9784820556642,
+            "reference_volume_ml": 1762.081322479248,
+            "empty_status": "neither_empty",
+            "hd95_mm": 87.26035633390754,
+            "assd_mm": 11.871747633477183,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 6,
+          "matched_lesions": 1,
+          "missed_lesions": 0,
+          "false_positive_lesions": 5,
+          "lesion_recall": 1.0,
+          "lesion_precision": 0.16666666666666666,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_128",
+        "prediction_sha256": "9b4eb89034b759e13649f52c57481ef185bbd04b5dfc9951ec25392131865777",
+        "prediction_sidecar_sha256": "f508e2830721c5d8603acbec626c613d83f3060b69a3337457c0aeedcff0dcb4",
+        "end_to_end_seconds": 432.8487234999775,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.8986592330411741,
+            "iou": 0.8159683723709565,
+            "precision": 0.8214256932930014,
+            "recall": 0.9919236315766082,
+            "prediction_voxels": 4727763,
+            "reference_voxels": 3915126,
+            "true_positive_voxels": 3883506,
+            "false_positive_voxels": 844257,
+            "false_negative_voxels": 31620,
+            "prediction_volume_ml": 1969.7358957635347,
+            "reference_volume_ml": 1631.16556786732,
+            "empty_status": "neither_empty",
+            "hd95_mm": 118.42576010121138,
+            "assd_mm": 19.79125969758789,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.0,
+            "iou": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "prediction_voxels": 117449,
+            "reference_voxels": 298,
+            "true_positive_voxels": 0,
+            "false_positive_voxels": 117449,
+            "false_negative_voxels": 298,
+            "prediction_volume_ml": 48.93297553653417,
+            "reference_volume_ml": 0.12415624407093447,
+            "empty_status": "neither_empty",
+            "hd95_mm": 374.29302402808355,
+            "assd_mm": 354.0879670228987,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.8866488688720773,
+            "iou": 0.7963784686452189,
+            "precision": 0.8015756586089525,
+            "recall": 0.9919242462629846,
+            "prediction_voxels": 4845212,
+            "reference_voxels": 3915424,
+            "true_positive_voxels": 3883804,
+            "false_positive_voxels": 961408,
+            "false_negative_voxels": 31620,
+            "prediction_volume_ml": 2018.668871300069,
+            "reference_volume_ml": 1631.289724111391,
+            "empty_status": "neither_empty",
+            "hd95_mm": 252.947902512737,
+            "assd_mm": 29.001073461270085,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 1,
+          "matched_lesions": 0,
+          "missed_lesions": 1,
+          "false_positive_lesions": 1,
+          "lesion_recall": 0.0,
+          "lesion_precision": 0.0,
+          "case_tumor_detected": false
+        },
+        "failure_flags": [
+          "complete_tumor_miss",
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_129",
+        "prediction_sha256": "642e6dee7ef6689cb695dc18fef17ae9c7cc878e0c18a7c4971727ce7a38dc0c",
+        "prediction_sidecar_sha256": "d489e1370279edbaed43852a92bc9eaf7219896c85e1d029902a637c03530bcb",
+        "end_to_end_seconds": 304.54409380001016,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.9303990149583997,
+            "iou": 0.8698561687676581,
+            "precision": 0.8933756185581103,
+            "recall": 0.9706237386759909,
+            "prediction_voxels": 5669435,
+            "reference_voxels": 5218227,
+            "true_positive_voxels": 5064935,
+            "false_positive_voxels": 604500,
+            "false_negative_voxels": 153292,
+            "prediction_volume_ml": 2422.2439162689625,
+            "reference_volume_ml": 2229.467064083183,
+            "empty_status": "neither_empty",
+            "hd95_mm": 47.91343034268512,
+            "assd_mm": 5.801921898880962,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.7652404690587158,
+            "iou": 0.6197485825238832,
+            "precision": 0.7721191074423447,
+            "recall": 0.7584833089881275,
+            "prediction_voxels": 320786,
+            "reference_voxels": 326553,
+            "true_positive_voxels": 247685,
+            "false_positive_voxels": 73101,
+            "false_negative_voxels": 78868,
+            "prediction_volume_ml": 137.05456309566216,
+            "reference_volume_ml": 139.51849127635796,
+            "empty_status": "neither_empty",
+            "hd95_mm": 33.18020841887655,
+            "assd_mm": 4.930788935071449,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.9426123153348664,
+            "iou": 0.8914538432830192,
+            "precision": 0.9075653469212571,
+            "recall": 0.9804747889005515,
+            "prediction_voxels": 5990221,
+            "reference_voxels": 5544780,
+            "true_positive_voxels": 5436517,
+            "false_positive_voxels": 553704,
+            "false_negative_voxels": 108263,
+            "prediction_volume_ml": 2559.2984793646247,
+            "reference_volume_ml": 2368.9855553595403,
+            "empty_status": "neither_empty",
+            "hd95_mm": 60.25007723273402,
+            "assd_mm": 6.980205873464177,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 11,
+          "predicted_lesions": 20,
+          "matched_lesions": 9,
+          "missed_lesions": 2,
+          "false_positive_lesions": 11,
+          "lesion_recall": 0.8181818181818182,
+          "lesion_precision": 0.45,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_130",
+        "prediction_sha256": "5cad0e031a91134e3e128d46b8485809034346f2f73f1a0fa8f1c646a9fd2216",
+        "prediction_sidecar_sha256": "aa1df402d947d317ee32da8ee24ef14f87b11bc1dbef10b474d2e80cc1313e02",
+        "end_to_end_seconds": 110.84110949997557,
+        "classes": {
+          "liver_label_1": {
+            "dice": 0.9258708845135794,
+            "iou": 0.8619735478395422,
+            "precision": 0.8730776717702521,
+            "recall": 0.9854596016239366,
+            "prediction_voxels": 8604735,
+            "reference_voxels": 7623450,
+            "true_positive_voxels": 7512602,
+            "false_positive_voxels": 1092133,
+            "false_negative_voxels": 110848,
+            "prediction_volume_ml": 2994.401380869432,
+            "reference_volume_ml": 2652.9194922317856,
+            "empty_status": "neither_empty",
+            "hd95_mm": 6.105571389925013,
+            "assd_mm": 3.928718073528939,
+            "surface_status": "measured"
+          },
+          "tumor_label_2": {
+            "dice": 0.8663428070570984,
+            "iou": 0.7642017467450878,
+            "precision": 0.9762865156146598,
+            "recall": 0.7786551889348801,
+            "prediction_voxels": 1523184,
+            "reference_voxels": 1909785,
+            "true_positive_voxels": 1487064,
+            "false_positive_voxels": 36120,
+            "false_negative_voxels": 422721,
+            "prediction_volume_ml": 530.0598185671291,
+            "reference_volume_ml": 664.5948819067326,
+            "empty_status": "neither_empty",
+            "hd95_mm": 6.6431066967780845,
+            "assd_mm": 2.25188986369221,
+            "surface_status": "measured"
+          },
+          "liver_region_1_or_2": {
+            "dice": 0.9522705533968149,
+            "iou": 0.9088897486695111,
+            "precision": 0.9243131782550789,
+            "recall": 0.9819719119480428,
+            "prediction_voxels": 10127919,
+            "reference_voxels": 9533235,
+            "true_positive_voxels": 9361369,
+            "false_positive_voxels": 766550,
+            "false_negative_voxels": 171866,
+            "prediction_volume_ml": 3524.4611994365614,
+            "reference_volume_ml": 3317.514374138518,
+            "empty_status": "neither_empty",
+            "hd95_mm": 36.04669665772819,
+            "assd_mm": 5.346573880837965,
+            "surface_status": "measured"
+          }
+        },
+        "lesions": {
+          "reference_lesions": 10,
+          "predicted_lesions": 19,
+          "matched_lesions": 10,
+          "missed_lesions": 0,
+          "false_positive_lesions": 9,
+          "lesion_recall": 1.0,
+          "lesion_precision": 0.5263157894736842,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      }
+    ],
+    "end_to_end_seconds": {
+      "n_total": 10,
+      "n_defined": 10,
+      "n_undefined": 0,
+      "mean": 312.2458673600049,
+      "sample_sd": 90.39518864207336,
+      "median": 301.8241753500188,
+      "q25": 284.3039719250082,
+      "q75": 359.0376316749898,
+      "mean_ci95": [
+        257.0384641047402,
+        361.7908134175147
+      ]
+    }
+  },
+  "historical_comparator": {
+    "model": "model_b",
+    "checkpoint_sha256": null,
+    "checkpoint_attribution": "historical_unpinned",
+    "summary": {
+      "cases": 10,
+      "tumor_reference_positive_cases": 10,
+      "classes": {
+        "liver_label_1": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8922504133581016,
+            "sample_sd": 0.04654807042534457,
+            "median": 0.8878474597052075,
+            "q25": 0.8829161115301057,
+            "q75": 0.9279617100192638,
+            "mean_ci95": [
+              0.8631654913536526,
+              0.9189207969296465
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8082602769979204,
+            "sample_sd": 0.0740797716790438,
+            "median": 0.7983359752729379,
+            "q25": 0.7903763479183006,
+            "q75": 0.8657271680747723,
+            "mean_ci95": [
+              0.7629911805435599,
+              0.8512133564776021
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8206371727099666,
+            "sample_sd": 0.07606605161864487,
+            "median": 0.8114147006194156,
+            "q25": 0.8011573543886908,
+            "q75": 0.8752920303655376,
+            "mean_ci95": [
+              0.7733061559122871,
+              0.8647886138528803
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9818177053863059,
+            "sample_sd": 0.006910978330871513,
+            "median": 0.9838685357565637,
+            "q25": 0.9759505851270417,
+            "q75": 0.9863979062445913,
+            "mean_ci95": [
+              0.9780117082777503,
+              0.9858627550796318
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 85.67839674327404,
+            "sample_sd": 59.4064545350978,
+            "median": 78.68801544209009,
+            "q25": 56.629979762523774,
+            "q75": 111.65086435541807,
+            "mean_ci95": [
+              50.832648326203866,
+              120.034270371183
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 13.05829221488617,
+            "sample_sd": 8.998029789158704,
+            "median": 10.40169107277513,
+            "q25": 7.0976344038198524,
+            "q75": 17.17245933215451,
+            "mean_ci95": [
+              8.108422045968132,
+              18.721960055354355
+            ]
+          }
+        },
+        "tumor_label_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5119548161320563,
+            "sample_sd": 0.3667103716662962,
+            "median": 0.6249321432916604,
+            "q25": 0.18684606615694657,
+            "q75": 0.8225712723490253,
+            "mean_ci95": [
+              0.2910884786709844,
+              0.7242019967904119
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4161727376311076,
+            "sample_sd": 0.3277665373225134,
+            "median": 0.47499998942034455,
+            "q25": 0.10756798164674927,
+            "q75": 0.698881067063905,
+            "mean_ci95": [
+              0.21662638420128208,
+              0.6110141161252067
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5760251219294712,
+            "sample_sd": 0.39996780551769134,
+            "median": 0.7384451938023366,
+            "q25": 0.19650904438968597,
+            "q75": 0.8590000695134768,
+            "mean_ci95": [
+              0.3344320146151077,
+              0.7986232128727105
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5442241234048453,
+            "sample_sd": 0.35815818741636163,
+            "median": 0.747218194446359,
+            "q25": 0.29241097004418565,
+            "q75": 0.789715427944934,
+            "mean_ci95": [
+              0.3284464238621013,
+              0.7446984143151869
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 77.40713554424329,
+            "sample_sd": 115.77494792694614,
+            "median": 28.166626228265933,
+            "q25": 7.029890602428093,
+            "q75": 82.99033876268498,
+            "mean_ci95": [
+              20.950519986096722,
+              157.73865357113655
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 54.08294388652877,
+            "sample_sd": 110.4691190682716,
+            "median": 6.09356290420001,
+            "q25": 2.2746407932325665,
+            "q75": 46.20584781153112,
+            "mean_ci95": [
+              4.936607940805414,
+              128.99640909941792
+            ]
+          }
+        },
+        "liver_region_1_or_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8989034352102647,
+            "sample_sd": 0.050714146631064036,
+            "median": 0.8968272430122972,
+            "q25": 0.8893193471628179,
+            "q75": 0.9361929037269022,
+            "mean_ci95": [
+              0.8669725406668317,
+              0.9276984915516552
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8197250837637275,
+            "sample_sd": 0.08104648891712016,
+            "median": 0.8129896222879929,
+            "q25": 0.800699961130515,
+            "q75": 0.8806289395265835,
+            "mean_ci95": [
+              0.7692073600015357,
+              0.8672647881370423
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8306568769567624,
+            "sample_sd": 0.08361542441172659,
+            "median": 0.8199795219886341,
+            "q25": 0.812631501915351,
+            "q75": 0.8954105059715813,
+            "mean_ci95": [
+              0.7785724353610088,
+              0.8800397210663871
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9844339235704591,
+            "sample_sd": 0.0036136334148722813,
+            "median": 0.9842537273472085,
+            "q25": 0.9815072018743367,
+            "q75": 0.9868532493752861,
+            "mean_ci95": [
+              0.9824054176392754,
+              0.9866678005171676
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 106.32869746735562,
+            "sample_sd": 73.00623983657896,
+            "median": 83.55385824581151,
+            "q25": 58.63963434925898,
+            "q75": 152.5984979190216,
+            "mean_ci95": [
+              65.62958214097497,
+              151.9908318332475
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 14.581441240208509,
+            "sample_sd": 9.756072981609018,
+            "median": 11.364267010049721,
+            "q25": 7.470653007054062,
+            "q75": 23.222995564001998,
+            "mean_ci95": [
+              9.017601016128154,
+              20.673998383903236
+            ]
+          }
+        },
+        "tumor_label_2_reference_positive_cases": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5119548161320563,
+            "sample_sd": 0.3667103716662962,
+            "median": 0.6249321432916604,
+            "q25": 0.18684606615694657,
+            "q75": 0.8225712723490253,
+            "mean_ci95": [
+              0.2910884786709844,
+              0.7242019967904119
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4161727376311076,
+            "sample_sd": 0.3277665373225134,
+            "median": 0.47499998942034455,
+            "q25": 0.10756798164674927,
+            "q75": 0.698881067063905,
+            "mean_ci95": [
+              0.21662638420128208,
+              0.6110141161252067
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5760251219294712,
+            "sample_sd": 0.39996780551769134,
+            "median": 0.7384451938023366,
+            "q25": 0.19650904438968597,
+            "q75": 0.8590000695134768,
+            "mean_ci95": [
+              0.3344320146151077,
+              0.7986232128727105
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5442241234048453,
+            "sample_sd": 0.35815818741636163,
+            "median": 0.747218194446359,
+            "q25": 0.29241097004418565,
+            "q75": 0.789715427944934,
+            "mean_ci95": [
+              0.3284464238621013,
+              0.7446984143151869
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 77.40713554424329,
+            "sample_sd": 115.77494792694614,
+            "median": 28.166626228265933,
+            "q25": 7.029890602428093,
+            "q75": 82.99033876268498,
+            "mean_ci95": [
+              20.950519986096722,
+              157.73865357113655
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 54.08294388652877,
+            "sample_sd": 110.4691190682716,
+            "median": 6.09356290420001,
+            "q25": 2.2746407932325665,
+            "q75": 46.20584781153112,
+            "mean_ci95": [
+              4.936607940805414,
+              128.99640909941792
+            ]
+          }
+        }
+      },
+      "lesions": {
+        "reference_lesions": 69,
+        "predicted_lesions": 95,
+        "matched_lesions": 43,
+        "missed_lesions": 26,
+        "false_positive_lesions": 52,
+        "pooled_lesion_recall": 0.6231884057971014,
+        "pooled_lesion_precision": 0.45263157894736844,
+        "pooled_lesion_recall_ci95": [
+          0.4545151515151515,
+          0.838764662756598
+        ],
+        "pooled_lesion_precision_ci95": [
+          0.27448668146503885,
+          0.6103930280246069
+        ]
+      }
+    }
+  },
+  "metric_protocol": {
+    "label_definitions": {
+      "liver_label_1": [
+        1
+      ],
+      "tumor_label_2": [
+        2
+      ],
+      "liver_region_1_or_2": [
+        1,
+        2
+      ]
+    },
+    "empty_policy": "Both empty: Dice/IoU=1, HD95/ASSD=0. Zero precision/recall denominator or exactly one empty surface: null. Report undefined counts; report tumor-positive subset separately.",
+    "surface": "6-connected boundary voxels; HD95 of pooled bidirectional distances; ASSD pooled mean; physical millimetres",
+    "lesions": "26-connected components; one-to-one maximum-cardinality match; no small-component filtering",
+    "lesion_iou_threshold": 0.1,
+    "bootstrap": "Percentile 95% CI of macro mean, case unit, undefined values excluded; no CI for n<2. Pooled lesion ratios resample whole cases.",
+    "bootstrap_samples": 2000,
+    "bootstrap_seed": 20261006
+  },
+  "paired": {
+    "left_model": "model_b",
+    "right_model": "model_b",
+    "difference_direction": "left minus right; positive overlap/recall/precision favors left, negative distance favors left",
+    "left_checkpoint_sha256": "280b1c6b2c8562b68803f269cb7a62fcd890430c2652af0daac578dd141e8b6b",
+    "right_checkpoint_sha256": null,
+    "left_checkpoint_attribution": "verified_prediction_sidecars",
+    "right_checkpoint_attribution": "historical_unpinned",
+    "cohort_id": "lits_121_130_retrospective_full_volume_v1",
+    "case_ids": [
+      "LITS_121",
+      "LITS_122",
+      "LITS_123",
+      "LITS_124",
+      "LITS_125",
+      "LITS_126",
+      "LITS_127",
+      "LITS_128",
+      "LITS_129",
+      "LITS_130"
+    ],
+    "held_out_certified": false,
+    "bootstrap": {
+      "samples": 2000,
+      "seed": 20261006,
+      "unit": "paired case",
+      "method": "percentile 95% CI of mean difference"
+    },
+    "paired_differences": {
+      "liver_label_1": {
+        "dice": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.00824400405784297,
+          "sample_sd": 0.004521380302249657,
+          "median": -0.0061590485926550365,
+          "q25": -0.011958122488720774,
+          "q75": -0.004897654280606484,
+          "mean_ci95": [
+            -0.010990084955712968,
+            -0.005665088700735382
+          ]
+        },
+        "iou": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.013427975194842767,
+          "sample_sd": 0.0077158504370722384,
+          "median": -0.010356272193977889,
+          "q25": -0.01726031366594616,
+          "q75": -0.007537297217998673,
+          "mean_ci95": [
+            -0.01825904729557667,
+            -0.009198648897936345
+          ]
+        },
+        "precision": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.013409093688835038,
+          "sample_sd": 0.008131516954161727,
+          "median": -0.010520767263542896,
+          "q25": -0.016862730949594923,
+          "q75": -0.007418466313072247,
+          "mean_ci95": [
+            -0.018487082473795838,
+            -0.009011812528137493
+          ]
+        },
+        "recall": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.0007074946955329842,
+          "sample_sd": 0.001425063167975389,
+          "median": -0.0008630988942281426,
+          "q25": -0.0012034518397131544,
+          "q75": 0.0003378064775971523,
+          "mean_ci95": [
+            -0.001554672573992323,
+            7.583983738129612e-05
+          ]
+        },
+        "hd95_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 7.146068624226264,
+          "sample_sd": 13.20047262917076,
+          "median": 2.068003012538206,
+          "q25": 1.101912021134441,
+          "q75": 3.8101050486271504,
+          "mean_ci95": [
+            0.8216242994556925,
+            16.065923011507714
+          ]
+        },
+        "assd_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 1.5778130423027883,
+          "sample_sd": 1.7127662319858592,
+          "median": 0.9043687286912983,
+          "q25": 0.4780440535702132,
+          "q75": 1.7845482460398552,
+          "mean_ci95": [
+            0.6797980243267276,
+            2.6725370748832122
+          ]
+        }
+      },
+      "tumor_label_2": {
+        "dice": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.01841940618377298,
+          "sample_sd": 0.06529103334035469,
+          "median": 0.0,
+          "q25": -0.010876271520779524,
+          "q75": 0.00033478069165515656,
+          "mean_ci95": [
+            -0.01219647727069207,
+            0.06152796693016593
+          ]
+        },
+        "iou": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.013979691320474602,
+          "sample_sd": 0.06421237264669692,
+          "median": 0.0,
+          "q25": -0.015814374593208787,
+          "q75": 0.0004930283807703661,
+          "mean_ci95": [
+            -0.016623827387732052,
+            0.05676335152892752
+          ]
+        },
+        "precision": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.02785730173698988,
+          "sample_sd": 0.04775497091970359,
+          "median": -0.012132648254015277,
+          "q25": -0.04377698677593875,
+          "q75": -0.0007399666198380506,
+          "mean_ci95": [
+            -0.05858264749085767,
+            -0.004033784003771042
+          ]
+        },
+        "recall": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.046359317072270464,
+          "sample_sd": 0.0994384097060613,
+          "median": 0.005085393707888131,
+          "q25": 0.0008121333029634248,
+          "q75": 0.0362401926316781,
+          "mean_ci95": [
+            0.004957663617770701,
+            0.11175336950837837
+          ]
+        },
+        "hd95_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 29.46744584449114,
+          "sample_sd": 45.44486329076689,
+          "median": 13.000532431211692,
+          "q25": 0.6472156389433075,
+          "q75": 38.08587596566288,
+          "mean_ci95": [
+            8.145219707195556,
+            58.88604161160136
+          ]
+        },
+        "assd_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 4.862658613195341,
+          "sample_sd": 5.958818536244919,
+          "median": 3.2106425288893288,
+          "q25": 0.2412430472488496,
+          "q75": 5.837636089491344,
+          "mean_ci95": [
+            1.6257384869134126,
+            8.553257196062244
+          ]
+        }
+      },
+      "liver_region_1_or_2": {
+        "dice": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.008190047156711155,
+          "sample_sd": 0.004653804136100343,
+          "median": -0.005781989842762791,
+          "q25": -0.0119485198702656,
+          "q75": -0.004892775052230125,
+          "mean_ci95": [
+            -0.011046594237806509,
+            -0.005600248720966627
+          ]
+        },
+        "iou": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.013371050271003503,
+          "sample_sd": 0.007701860847181402,
+          "median": -0.009719000547080303,
+          "q25": -0.01664465032518589,
+          "q75": -0.0083105337264813,
+          "mean_ci95": [
+            -0.018211189930041324,
+            -0.009164967846509445
+          ]
+        },
+        "precision": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.01402178369441658,
+          "sample_sd": 0.007865598469981,
+          "median": -0.01028934205334292,
+          "q25": -0.016841672177049183,
+          "q75": -0.008667715449442032,
+          "mean_ci95": [
+            -0.01886653690454183,
+            -0.009646328936502685
+          ]
+        },
+        "recall": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.0003051693370852759,
+          "sample_sd": 0.0016345856669746613,
+          "median": 0.0005748034988555251,
+          "q25": 3.9618220675635696e-05,
+          "q75": 0.0008239478147948343,
+          "mean_ci95": [
+            -0.0007194750401936581,
+            0.0011619787722625195
+          ]
+        },
+        "hd95_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 5.955726602705691,
+          "sample_sd": 8.799462646046058,
+          "median": 2.6054780765335366,
+          "q25": 0.9294677215111804,
+          "q75": 11.428299494786222,
+          "mean_ci95": [
+            1.2264067007471844,
+            11.349151690917193
+          ]
+        },
+        "assd_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 1.7644610915377128,
+          "sample_sd": 1.5368017738481976,
+          "median": 1.212451393995547,
+          "q25": 0.7905223622140232,
+          "q75": 2.0433685499972873,
+          "mean_ci95": [
+            0.9584924346125702,
+            2.7386669205379714
+          ]
+        }
+      }
+    },
+    "left_evaluation_sha256": "243bbac13efcfeae58c9804ba5408152d4bb470f828829d2179096829cee57d7",
+    "right_evaluation_sha256": "35f78888bffdd63415afea74aeb6b279e6ce8c7b627b8e5ac10908da124e2508"
+  }
+}

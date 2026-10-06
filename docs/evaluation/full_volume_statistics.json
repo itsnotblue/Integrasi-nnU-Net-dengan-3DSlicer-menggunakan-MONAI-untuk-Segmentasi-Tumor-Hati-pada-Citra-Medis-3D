@@ -1,0 +1,1453 @@
+{
+  "schema_version": 1,
+  "analysis_kind": "historical_complete_volume_spatial_audit",
+  "held_out_certified": false,
+  "component_caveat": "26-connected annotation islands are engineering components, not adjudicated distinct clinical lesions.",
+  "b": {
+    "summary": {
+      "cases": 10,
+      "tumor_reference_positive_cases": 10,
+      "classes": {
+        "liver_label_1": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8922504133581016,
+            "sample_sd": 0.04654807042534457,
+            "median": 0.8878474597052075,
+            "q25": 0.8829161115301057,
+            "q75": 0.9279617100192638,
+            "mean_ci95": [
+              0.8631654913536526,
+              0.9189207969296465
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8082602769979204,
+            "sample_sd": 0.0740797716790438,
+            "median": 0.7983359752729379,
+            "q25": 0.7903763479183006,
+            "q75": 0.8657271680747723,
+            "mean_ci95": [
+              0.7629911805435599,
+              0.8512133564776021
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8206371727099666,
+            "sample_sd": 0.07606605161864487,
+            "median": 0.8114147006194156,
+            "q25": 0.8011573543886908,
+            "q75": 0.8752920303655376,
+            "mean_ci95": [
+              0.7733061559122871,
+              0.8647886138528803
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9818177053863059,
+            "sample_sd": 0.006910978330871513,
+            "median": 0.9838685357565637,
+            "q25": 0.9759505851270417,
+            "q75": 0.9863979062445913,
+            "mean_ci95": [
+              0.9780117082777503,
+              0.9858627550796318
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 85.67839674327404,
+            "sample_sd": 59.4064545350978,
+            "median": 78.68801544209009,
+            "q25": 56.629979762523774,
+            "q75": 111.65086435541807,
+            "mean_ci95": [
+              50.832648326203866,
+              120.034270371183
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 13.05829221488617,
+            "sample_sd": 8.998029789158704,
+            "median": 10.40169107277513,
+            "q25": 7.0976344038198524,
+            "q75": 17.17245933215451,
+            "mean_ci95": [
+              8.108422045968132,
+              18.721960055354355
+            ]
+          }
+        },
+        "tumor_label_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5119548161320563,
+            "sample_sd": 0.3667103716662962,
+            "median": 0.6249321432916604,
+            "q25": 0.18684606615694657,
+            "q75": 0.8225712723490253,
+            "mean_ci95": [
+              0.2910884786709844,
+              0.7242019967904119
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4161727376311076,
+            "sample_sd": 0.3277665373225134,
+            "median": 0.47499998942034455,
+            "q25": 0.10756798164674927,
+            "q75": 0.698881067063905,
+            "mean_ci95": [
+              0.21662638420128208,
+              0.6110141161252067
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5760251219294712,
+            "sample_sd": 0.39996780551769134,
+            "median": 0.7384451938023366,
+            "q25": 0.19650904438968597,
+            "q75": 0.8590000695134768,
+            "mean_ci95": [
+              0.3344320146151077,
+              0.7986232128727105
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5442241234048453,
+            "sample_sd": 0.35815818741636163,
+            "median": 0.747218194446359,
+            "q25": 0.29241097004418565,
+            "q75": 0.789715427944934,
+            "mean_ci95": [
+              0.3284464238621013,
+              0.7446984143151869
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 77.40713554424329,
+            "sample_sd": 115.77494792694614,
+            "median": 28.166626228265933,
+            "q25": 7.029890602428093,
+            "q75": 82.99033876268498,
+            "mean_ci95": [
+              20.950519986096722,
+              157.73865357113655
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 54.08294388652877,
+            "sample_sd": 110.4691190682716,
+            "median": 6.09356290420001,
+            "q25": 2.2746407932325665,
+            "q75": 46.20584781153112,
+            "mean_ci95": [
+              4.936607940805414,
+              128.99640909941792
+            ]
+          }
+        },
+        "liver_region_1_or_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8989034352102647,
+            "sample_sd": 0.050714146631064036,
+            "median": 0.8968272430122972,
+            "q25": 0.8893193471628179,
+            "q75": 0.9361929037269022,
+            "mean_ci95": [
+              0.8669725406668317,
+              0.9276984915516552
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8197250837637275,
+            "sample_sd": 0.08104648891712016,
+            "median": 0.8129896222879929,
+            "q25": 0.800699961130515,
+            "q75": 0.8806289395265835,
+            "mean_ci95": [
+              0.7692073600015357,
+              0.8672647881370423
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8306568769567624,
+            "sample_sd": 0.08361542441172659,
+            "median": 0.8199795219886341,
+            "q25": 0.812631501915351,
+            "q75": 0.8954105059715813,
+            "mean_ci95": [
+              0.7785724353610088,
+              0.8800397210663871
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9844339235704591,
+            "sample_sd": 0.0036136334148722813,
+            "median": 0.9842537273472085,
+            "q25": 0.9815072018743367,
+            "q75": 0.9868532493752861,
+            "mean_ci95": [
+              0.9824054176392754,
+              0.9866678005171676
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 106.32869746735562,
+            "sample_sd": 73.00623983657896,
+            "median": 83.55385824581151,
+            "q25": 58.63963434925898,
+            "q75": 152.5984979190216,
+            "mean_ci95": [
+              65.62958214097497,
+              151.9908318332475
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 14.581441240208509,
+            "sample_sd": 9.756072981609018,
+            "median": 11.364267010049721,
+            "q25": 7.470653007054062,
+            "q75": 23.222995564001998,
+            "mean_ci95": [
+              9.017601016128154,
+              20.673998383903236
+            ]
+          }
+        },
+        "tumor_label_2_reference_positive_cases": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5119548161320563,
+            "sample_sd": 0.3667103716662962,
+            "median": 0.6249321432916604,
+            "q25": 0.18684606615694657,
+            "q75": 0.8225712723490253,
+            "mean_ci95": [
+              0.2910884786709844,
+              0.7242019967904119
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4161727376311076,
+            "sample_sd": 0.3277665373225134,
+            "median": 0.47499998942034455,
+            "q25": 0.10756798164674927,
+            "q75": 0.698881067063905,
+            "mean_ci95": [
+              0.21662638420128208,
+              0.6110141161252067
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5760251219294712,
+            "sample_sd": 0.39996780551769134,
+            "median": 0.7384451938023366,
+            "q25": 0.19650904438968597,
+            "q75": 0.8590000695134768,
+            "mean_ci95": [
+              0.3344320146151077,
+              0.7986232128727105
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5442241234048453,
+            "sample_sd": 0.35815818741636163,
+            "median": 0.747218194446359,
+            "q25": 0.29241097004418565,
+            "q75": 0.789715427944934,
+            "mean_ci95": [
+              0.3284464238621013,
+              0.7446984143151869
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 77.40713554424329,
+            "sample_sd": 115.77494792694614,
+            "median": 28.166626228265933,
+            "q25": 7.029890602428093,
+            "q75": 82.99033876268498,
+            "mean_ci95": [
+              20.950519986096722,
+              157.73865357113655
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 54.08294388652877,
+            "sample_sd": 110.4691190682716,
+            "median": 6.09356290420001,
+            "q25": 2.2746407932325665,
+            "q75": 46.20584781153112,
+            "mean_ci95": [
+              4.936607940805414,
+              128.99640909941792
+            ]
+          }
+        }
+      },
+      "lesions": {
+        "reference_lesions": 69,
+        "predicted_lesions": 95,
+        "matched_lesions": 43,
+        "missed_lesions": 26,
+        "false_positive_lesions": 52,
+        "pooled_lesion_recall": 0.6231884057971014,
+        "pooled_lesion_precision": 0.45263157894736844,
+        "pooled_lesion_recall_ci95": [
+          0.4545151515151515,
+          0.838764662756598
+        ],
+        "pooled_lesion_precision_ci95": [
+          0.27448668146503885,
+          0.6103930280246069
+        ]
+      }
+    },
+    "checkpoint_attribution": "historical_unpinned",
+    "historical_summary_sha256": "8943528b32e237e99ee09c39361d79b179a195e81b629f9d4d66f6a780effce1",
+    "counts_verified": true,
+    "per_case": [
+      {
+        "case_id": "LITS_121",
+        "prediction_sha256": "3fc03d987f419b8b529fd5e3661faf7aab67d33fd54f6999bffe90a582644fd3",
+        "tumor_dice": 0.12240893699167696,
+        "liver_region_dice": 0.7854597657057847,
+        "lesions": {
+          "reference_lesions": 6,
+          "predicted_lesions": 11,
+          "matched_lesions": 3,
+          "missed_lesions": 3,
+          "false_positive_lesions": 8,
+          "lesion_recall": 0.5,
+          "lesion_precision": 0.2727272727272727,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_122",
+        "prediction_sha256": "d781b9a5724c4bfb8879bbe28788a00a02fcb3b3b035ba472b2cdc7291695e8a",
+        "tumor_dice": 0,
+        "liver_region_dice": 0.8885875117728735,
+        "lesions": {
+          "reference_lesions": 3,
+          "predicted_lesions": 12,
+          "matched_lesions": 0,
+          "missed_lesions": 3,
+          "false_positive_lesions": 12,
+          "lesion_recall": 0,
+          "lesion_precision": 0,
+          "case_tumor_detected": false
+        },
+        "failure_flags": [
+          "complete_tumor_miss",
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_123",
+        "prediction_sha256": "c6ad87ebaf7950205145901fa5037bb448706a9fe7b05061e5d8a62a55cec53c",
+        "tumor_dice": 0.38015745365275544,
+        "liver_region_dice": 0.8663060647670568,
+        "lesions": {
+          "reference_lesions": 17,
+          "predicted_lesions": 12,
+          "matched_lesions": 8,
+          "missed_lesions": 9,
+          "false_positive_lesions": 4,
+          "lesion_recall": 0.47058823529411764,
+          "lesion_precision": 0.6666666666666666,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_124",
+        "prediction_sha256": "ee31a0acbfd3412f97f12e1c43304a3c2512dc7b94e1371cf869e1e82921390d",
+        "tumor_dice": 0.8311139526516844,
+        "liver_region_dice": 0.9032541592549963,
+        "lesions": {
+          "reference_lesions": 5,
+          "predicted_lesions": 14,
+          "matched_lesions": 5,
+          "missed_lesions": 0,
+          "false_positive_lesions": 9,
+          "lesion_recall": 1,
+          "lesion_precision": 0.35714285714285715,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_125",
+        "prediction_sha256": "128980374103ea5bbf849cb87385f435372c892ba09706268111f36c4cf55821",
+        "tumor_dice": 0.8728396923540944,
+        "liver_region_dice": 0.8918471065453181,
+        "lesions": {
+          "reference_lesions": 14,
+          "predicted_lesions": 6,
+          "matched_lesions": 6,
+          "missed_lesions": 8,
+          "false_positive_lesions": 0,
+          "lesion_recall": 0.42857142857142855,
+          "lesion_precision": 1,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_reference_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_126",
+        "prediction_sha256": "636fff4774e5f3e47b9d08a64553fdbf41a49f34dd305edb0cb121cf85cf85e4",
+        "tumor_dice": 0.7969432314410481,
+        "liver_region_dice": 0.95538565243944,
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 1,
+          "matched_lesions": 1,
+          "missed_lesions": 0,
+          "false_positive_lesions": 0,
+          "lesion_recall": 1,
+          "lesion_precision": 1,
+          "case_tumor_detected": true
+        },
+        "failure_flags": []
+      },
+      {
+        "case_id": "LITS_127",
+        "prediction_sha256": "6f523976353d707c70d09c45da1fd84d0df80de84204b859aa8ab83edfb6685b",
+        "tumor_dice": 0.4627199106394862,
+        "liver_region_dice": 0.8915148533326509,
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 3,
+          "matched_lesions": 1,
+          "missed_lesions": 0,
+          "false_positive_lesions": 2,
+          "lesion_recall": 1,
+          "lesion_precision": 0.3333333333333333,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "tumor_dice_below_0.5",
+          "unmatched_prediction_lesions",
+          "liver_region_dice_below_0.9"
+        ]
+      },
+      {
+        "case_id": "LITS_128",
+        "prediction_sha256": "a027bb1bb5c335afa5009f34fa06614bcdf7ec8e37fad8cfc24c22fa8cae2579",
+        "tumor_dice": 0,
+        "liver_region_dice": 0.9018073794792765,
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 3,
+          "matched_lesions": 0,
+          "missed_lesions": 1,
+          "false_positive_lesions": 3,
+          "lesion_recall": 0,
+          "lesion_precision": 0,
+          "case_tumor_detected": false
+        },
+        "failure_flags": [
+          "complete_tumor_miss",
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_129",
+        "prediction_sha256": "a6f7574410b9d4c41b2c4239d865584ac0b26405728cf5a9626a4677137c4dad",
+        "tumor_dice": 0.7871443759438345,
+        "liver_region_dice": 0.9471724852175375,
+        "lesions": {
+          "reference_lesions": 11,
+          "predicted_lesions": 16,
+          "matched_lesions": 9,
+          "missed_lesions": 2,
+          "false_positive_lesions": 7,
+          "lesion_recall": 0.8181818181818182,
+          "lesion_precision": 0.5625,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_130",
+        "prediction_sha256": "8fd3d5a546fd23dd4d1594e1ef642dc50cc522aa91bad804ad20fc3a45f8a35b",
+        "tumor_dice": 0.8662206076459823,
+        "liver_region_dice": 0.9576993735877141,
+        "lesions": {
+          "reference_lesions": 10,
+          "predicted_lesions": 17,
+          "matched_lesions": 10,
+          "missed_lesions": 0,
+          "false_positive_lesions": 7,
+          "lesion_recall": 1,
+          "lesion_precision": 0.5882352941176471,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      }
+    ]
+  },
+  "c": {
+    "summary": {
+      "cases": 10,
+      "tumor_reference_positive_cases": 10,
+      "classes": {
+        "liver_label_1": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9321390869368169,
+            "sample_sd": 0.020010738904697126,
+            "median": 0.9292758292040584,
+            "q25": 0.9245199687656888,
+            "q75": 0.944392781320861,
+            "mean_ci95": [
+              0.9203376389513123,
+              0.9449918492502069
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8734992284735567,
+            "sample_sd": 0.03535571270198397,
+            "median": 0.8678948604239357,
+            "q25": 0.859642053660586,
+            "q75": 0.8947525187380614,
+            "mean_ci95": [
+              0.8529062926829781,
+              0.8961960885946891
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9006313155838722,
+            "sample_sd": 0.040046696434295016,
+            "median": 0.8955538941040884,
+            "q25": 0.881877759389346,
+            "q75": 0.9169447667118719,
+            "mean_ci95": [
+              0.8770030203456691,
+              0.9259175356812387
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9669845735375073,
+            "sample_sd": 0.00906749323776279,
+            "median": 0.9636660390673402,
+            "q25": 0.9608962194218753,
+            "q75": 0.9727178338391389,
+            "mean_ci95": [
+              0.9621501882087452,
+              0.9724276102009475
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 50.019047022444,
+            "sample_sd": 35.22387873484043,
+            "median": 56.59298484135688,
+            "q25": 14.553273534948712,
+            "q75": 79.0362206932813,
+            "mean_ci95": [
+              29.162063027031795,
+              70.54298414788316
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 6.301774887879451,
+            "sample_sd": 3.7243907087616175,
+            "median": 6.498218388483528,
+            "q25": 3.2243694123119973,
+            "q75": 9.727368465659827,
+            "mean_ci95": [
+              4.095235804219322,
+              8.45478767367922
+            ]
+          }
+        },
+        "tumor_label_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.49201016476897996,
+            "sample_sd": 0.3770265633813368,
+            "median": 0.6187219934800029,
+            "q25": 0.13427550357374918,
+            "q75": 0.8379743606124817,
+            "mean_ci95": [
+              0.2642093585390751,
+              0.7228650960934225
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4011231668078047,
+            "sample_sd": 0.33472883850059404,
+            "median": 0.4581642010810082,
+            "q25": 0.07223571551512722,
+            "q75": 0.7217217413766305,
+            "mean_ci95": [
+              0.2008379070565909,
+              0.6025206881278923
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 9,
+            "n_undefined": 1,
+            "mean": 0.6316373141985424,
+            "sample_sd": 0.3552078912967884,
+            "median": 0.7897823494335122,
+            "q25": 0.5741379310344827,
+            "q75": 0.8582868257515938,
+            "mean_ci95": [
+              0.4060071635113872,
+              0.8276834909458319
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5354190744604712,
+            "sample_sd": 0.38536729029223016,
+            "median": 0.7644254716969342,
+            "q25": 0.13857784359308964,
+            "q75": 0.8163649593572562,
+            "mean_ci95": [
+              0.3047749973578356,
+              0.7525572178808662
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 9,
+            "n_undefined": 1,
+            "mean": 67.56285139991218,
+            "sample_sd": 70.74299569389636,
+            "median": 13.992150263263673,
+            "q25": 7.338152111553446,
+            "q75": 139.40227290185143,
+            "mean_ci95": [
+              23.511095524270267,
+              111.87395005266994
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 9,
+            "n_undefined": 1,
+            "mean": 23.231662092201546,
+            "sample_sd": 30.771411371788187,
+            "median": 4.310692056501907,
+            "q25": 2.370432915058023,
+            "q75": 28.185794510937246,
+            "mean_ci95": [
+              5.877975285018557,
+              43.128580150833656
+            ]
+          }
+        },
+        "liver_region_1_or_2": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.93855523533955,
+            "sample_sd": 0.02100084704671758,
+            "median": 0.9340203117921437,
+            "q25": 0.9239311399691057,
+            "q75": 0.9576513878594215,
+            "mean_ci95": [
+              0.9259644599910413,
+              0.951763038112036
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.8848928367963248,
+            "sample_sd": 0.03754962201237555,
+            "median": 0.8762213586386579,
+            "q25": 0.8586271450213394,
+            "q75": 0.9189382636944958,
+            "mean_ci95": [
+              0.8625571592004887,
+              0.9084410691948304
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9107178453687416,
+            "sample_sd": 0.042887390247409465,
+            "median": 0.9024262495935025,
+            "q25": 0.8807980302227304,
+            "q75": 0.9455911386035709,
+            "mean_ci95": [
+              0.8855101964271175,
+              0.93733062848343
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.9693250337881381,
+            "sample_sd": 0.007056256618431366,
+            "median": 0.9697348962912705,
+            "q25": 0.9642385637705183,
+            "q75": 0.9725350771011904,
+            "mean_ci95": [
+              0.9655440788384607,
+              0.973705837291747
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 52.14469114260281,
+            "sample_sd": 35.549964862377344,
+            "median": 59.13867538481138,
+            "q25": 15.681825887218693,
+            "q75": 81.83453926240816,
+            "mean_ci95": [
+              30.513842348393805,
+              72.60261480458746
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 6.659739972864327,
+            "sample_sd": 3.6811095897465176,
+            "median": 7.434024893662374,
+            "q25": 3.554223316549825,
+            "q75": 9.820519545273811,
+            "mean_ci95": [
+              4.487915695624208,
+              8.77347810677182
+            ]
+          }
+        },
+        "tumor_label_2_reference_positive_cases": {
+          "dice": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.49201016476897996,
+            "sample_sd": 0.3770265633813368,
+            "median": 0.6187219934800029,
+            "q25": 0.13427550357374918,
+            "q75": 0.8379743606124817,
+            "mean_ci95": [
+              0.2642093585390751,
+              0.7228650960934225
+            ]
+          },
+          "iou": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.4011231668078047,
+            "sample_sd": 0.33472883850059404,
+            "median": 0.4581642010810082,
+            "q25": 0.07223571551512722,
+            "q75": 0.7217217413766305,
+            "mean_ci95": [
+              0.2008379070565909,
+              0.6025206881278923
+            ]
+          },
+          "precision": {
+            "n_total": 10,
+            "n_defined": 9,
+            "n_undefined": 1,
+            "mean": 0.6316373141985424,
+            "sample_sd": 0.3552078912967884,
+            "median": 0.7897823494335122,
+            "q25": 0.5741379310344827,
+            "q75": 0.8582868257515938,
+            "mean_ci95": [
+              0.4060071635113872,
+              0.8276834909458319
+            ]
+          },
+          "recall": {
+            "n_total": 10,
+            "n_defined": 10,
+            "n_undefined": 0,
+            "mean": 0.5354190744604712,
+            "sample_sd": 0.38536729029223016,
+            "median": 0.7644254716969342,
+            "q25": 0.13857784359308964,
+            "q75": 0.8163649593572562,
+            "mean_ci95": [
+              0.3047749973578356,
+              0.7525572178808662
+            ]
+          },
+          "hd95_mm": {
+            "n_total": 10,
+            "n_defined": 9,
+            "n_undefined": 1,
+            "mean": 67.56285139991218,
+            "sample_sd": 70.74299569389636,
+            "median": 13.992150263263673,
+            "q25": 7.338152111553446,
+            "q75": 139.40227290185143,
+            "mean_ci95": [
+              23.511095524270267,
+              111.87395005266994
+            ]
+          },
+          "assd_mm": {
+            "n_total": 10,
+            "n_defined": 9,
+            "n_undefined": 1,
+            "mean": 23.231662092201546,
+            "sample_sd": 30.771411371788187,
+            "median": 4.310692056501907,
+            "q25": 2.370432915058023,
+            "q75": 28.185794510937246,
+            "mean_ci95": [
+              5.877975285018557,
+              43.128580150833656
+            ]
+          }
+        }
+      },
+      "lesions": {
+        "reference_lesions": 69,
+        "predicted_lesions": 82,
+        "matched_lesions": 42,
+        "missed_lesions": 27,
+        "false_positive_lesions": 40,
+        "pooled_lesion_recall": 0.6086956521739131,
+        "pooled_lesion_precision": 0.5121951219512195,
+        "pooled_lesion_recall_ci95": [
+          0.4262295081967213,
+          0.8214573732718892
+        ],
+        "pooled_lesion_precision_ci95": [
+          0.3661885949845414,
+          0.6304633867276886
+        ]
+      }
+    },
+    "checkpoint_attribution": "historical_unpinned",
+    "historical_summary_sha256": "50f42fc056584f054785bea28404a0c55dce46ed7ce4205aaf996c7c63aa1195",
+    "counts_verified": true,
+    "per_case": [
+      {
+        "case_id": "LITS_121",
+        "prediction_sha256": "9463d24c64fe2b4a2d8df65840958388f40fd822e159124309c89c0e087d97dc",
+        "tumor_dice": 0.18472106191404436,
+        "liver_region_dice": 0.9224898372511394,
+        "lesions": {
+          "reference_lesions": 6,
+          "predicted_lesions": 10,
+          "matched_lesions": 3,
+          "missed_lesions": 3,
+          "false_positive_lesions": 7,
+          "lesion_recall": 0.5,
+          "lesion_precision": 0.3,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_122",
+        "prediction_sha256": "152dad056038c7ff9c98a8ff6acf7f96ddd880fe266b24f4c35edeaaf682be8e",
+        "tumor_dice": 0,
+        "liver_region_dice": 0.9312142536883665,
+        "lesions": {
+          "reference_lesions": 3,
+          "predicted_lesions": 3,
+          "matched_lesions": 0,
+          "missed_lesions": 3,
+          "false_positive_lesions": 3,
+          "lesion_recall": 0,
+          "lesion_precision": 0,
+          "case_tumor_detected": false
+        },
+        "failure_flags": [
+          "complete_tumor_miss",
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_123",
+        "prediction_sha256": "bc81d277162b600c5b3146902cdddaa8eede9aed6c4e7fa24f924abd8218ab47",
+        "tumor_dice": 0.5030280623921692,
+        "liver_region_dice": 0.939373812073236,
+        "lesions": {
+          "reference_lesions": 17,
+          "predicted_lesions": 15,
+          "matched_lesions": 8,
+          "missed_lesions": 9,
+          "false_positive_lesions": 7,
+          "lesion_recall": 0.47058823529411764,
+          "lesion_precision": 0.5333333333333333,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_124",
+        "prediction_sha256": "cbf5b4555db4ffabbcef5c7dfb71f036da32a1e585fffd5625d633a721dae847",
+        "tumor_dice": 0.8505198847058407,
+        "liver_region_dice": 0.919626098753043,
+        "lesions": {
+          "reference_lesions": 5,
+          "predicted_lesions": 12,
+          "matched_lesions": 5,
+          "missed_lesions": 0,
+          "false_positive_lesions": 7,
+          "lesion_recall": 1,
+          "lesion_precision": 0.4166666666666667,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_125",
+        "prediction_sha256": "33ba9763549760c49d92009e4b41b0fc4d182f4e706dbdd58cb91ac235779e4c",
+        "tumor_dice": 0.8694780448611633,
+        "liver_region_dice": 0.9368263698959208,
+        "lesions": {
+          "reference_lesions": 14,
+          "predicted_lesions": 6,
+          "matched_lesions": 6,
+          "missed_lesions": 8,
+          "false_positive_lesions": 0,
+          "lesion_recall": 0.42857142857142855,
+          "lesion_precision": 1,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_reference_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_126",
+        "prediction_sha256": "b578a3e6fcf9cdafb182e2fe2bc566a7c04dc235baddde5ac467d0faef3ce710",
+        "tumor_dice": 0.7344159245678366,
+        "liver_region_dice": 0.9699009085858207,
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 2,
+          "matched_lesions": 1,
+          "missed_lesions": 0,
+          "false_positive_lesions": 1,
+          "lesion_recall": 1,
+          "lesion_precision": 0.5,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_127",
+        "prediction_sha256": "53cf197a0c1253ada40612a7c8761fe87b675da7e78c6ca9dffd8fea80971687",
+        "tumor_dice": 0.11746031746031746,
+        "liver_region_dice": 0.9090630007797582,
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 3,
+          "matched_lesions": 0,
+          "missed_lesions": 1,
+          "false_positive_lesions": 3,
+          "lesion_recall": 0,
+          "lesion_precision": 0,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_128",
+        "prediction_sha256": "6698e7591c7c7e322ceae247e3a20e521f242666078aa0ab0843c91bfa7b46ae",
+        "tumor_dice": 0,
+        "liver_region_dice": 0.9282550481230044,
+        "lesions": {
+          "reference_lesions": 1,
+          "predicted_lesions": 0,
+          "matched_lesions": 0,
+          "missed_lesions": 1,
+          "false_positive_lesions": 0,
+          "lesion_recall": 0,
+          "lesion_precision": null,
+          "case_tumor_detected": false
+        },
+        "failure_flags": [
+          "complete_tumor_miss",
+          "tumor_dice_below_0.5",
+          "unmatched_reference_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_129",
+        "prediction_sha256": "789cf45cc0f65b1f145b50484caf503a27ac97d2803f82927070de62a87b4235",
+        "tumor_dice": 0.8003377883324042,
+        "liver_region_dice": 0.9637439131214833,
+        "lesions": {
+          "reference_lesions": 11,
+          "predicted_lesions": 16,
+          "matched_lesions": 9,
+          "missed_lesions": 2,
+          "false_positive_lesions": 7,
+          "lesion_recall": 0.8181818181818182,
+          "lesion_precision": 0.5625,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_reference_lesions",
+          "unmatched_prediction_lesions"
+        ]
+      },
+      {
+        "case_id": "LITS_130",
+        "prediction_sha256": "472c80eb7d6e846e88ac7da28eeee349c0ea34f1ab202fe9b498dc34a30f743d",
+        "tumor_dice": 0.8601405634560231,
+        "liver_region_dice": 0.9650591111237269,
+        "lesions": {
+          "reference_lesions": 10,
+          "predicted_lesions": 15,
+          "matched_lesions": 10,
+          "missed_lesions": 0,
+          "false_positive_lesions": 5,
+          "lesion_recall": 1,
+          "lesion_precision": 0.6666666666666666,
+          "case_tumor_detected": true
+        },
+        "failure_flags": [
+          "unmatched_prediction_lesions"
+        ]
+      }
+    ]
+  },
+  "paired": {
+    "left_model": "model_b",
+    "right_model": "model_c",
+    "difference_direction": "left minus right; positive overlap/recall/precision favors left, negative distance favors left",
+    "left_checkpoint_sha256": null,
+    "right_checkpoint_sha256": null,
+    "left_checkpoint_attribution": "historical_unpinned",
+    "right_checkpoint_attribution": "historical_unpinned",
+    "cohort_id": "lits_121_130_retrospective_full_volume_v1",
+    "case_ids": [
+      "LITS_121",
+      "LITS_122",
+      "LITS_123",
+      "LITS_124",
+      "LITS_125",
+      "LITS_126",
+      "LITS_127",
+      "LITS_128",
+      "LITS_129",
+      "LITS_130"
+    ],
+    "held_out_certified": false,
+    "bootstrap": {
+      "samples": 2000,
+      "seed": 20261006,
+      "unit": "paired case",
+      "method": "percentile 95% CI of mean difference"
+    },
+    "paired_differences": {
+      "liver_label_1": {
+        "dice": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.03988867357871538,
+          "sample_sd": 0.03890480086518333,
+          "median": -0.017819296486295544,
+          "q25": -0.04689178113899756,
+          "q75": -0.015921436706469727,
+          "mean_ci95": [
+            -0.06660430800336364,
+            -0.019721254375364806
+          ]
+        },
+        "iou": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.06523895147563645,
+          "sample_sd": 0.059675783830833336,
+          "median": -0.030649713940018974,
+          "q25": -0.07844901262816978,
+          "q75": -0.02754659402417675,
+          "mean_ci95": [
+            -0.10585550199171874,
+            -0.03380139449407728
+          ]
+        },
+        "precision": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.07999414287390548,
+          "sample_sd": 0.06309544946200132,
+          "median": -0.04812280861755314,
+          "q25": -0.0935995720416607,
+          "q75": -0.039885937367800106,
+          "mean_ci95": [
+            -0.12228794738387008,
+            -0.0478410934558713
+          ]
+        },
+        "recall": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.014833131848798465,
+          "sample_sd": 0.0063990654465455755,
+          "median": 0.014301898423332238,
+          "q25": 0.009543091360146916,
+          "q75": 0.019119476543125985,
+          "mean_ci95": [
+            0.011140768971641494,
+            0.018425335072390452
+          ]
+        },
+        "hd95_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 35.65934972083006,
+          "sample_sd": 47.977024098387,
+          "median": 9.809390955683703,
+          "q25": 3.6963824430576895,
+          "q75": 50.64448985402194,
+          "mean_ci95": [
+            8.65333633932951,
+            64.38359191157194
+          ]
+        },
+        "assd_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 6.756517327006722,
+          "sample_sd": 7.492950094176156,
+          "median": 2.771652674322384,
+          "q25": 1.9422479325398214,
+          "q75": 7.5831273011397675,
+          "mean_ci95": [
+            2.7419893408807896,
+            11.576382454097725
+          ]
+        }
+      },
+      "tumor_label_2": {
+        "dice": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.019944651363076334,
+          "sample_sd": 0.12414815117073903,
+          "median": 0,
+          "q25": -0.017852802137759666,
+          "q75": 0.005400445015702193,
+          "mean_ci95": [
+            -0.03857366482038415,
+            0.10036115546160064
+          ]
+        },
+        "iou": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.015049570823302905,
+          "sample_sd": 0.09086015393066298,
+          "median": 0,
+          "q25": -0.026198438017193654,
+          "q75": 0.008376006363953636,
+          "mean_ci95": [
+            -0.030546068003420652,
+            0.07260574214807672
+          ]
+        },
+        "precision": {
+          "n_total": 10,
+          "n_defined": 9,
+          "n_undefined": 1,
+          "mean": 0.00839059905642564,
+          "sample_sd": 0.1255129620481355,
+          "median": 0.012996782727640599,
+          "q25": 0,
+          "q75": 0.0323671031826922,
+          "mean_ci95": [
+            -0.0762117625646347,
+            0.0789971426671406
+          ]
+        },
+        "recall": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.00880504894437395,
+          "sample_sd": 0.09456930068260866,
+          "median": -0.007629140542639912,
+          "q25": -0.04165813194808329,
+          "q75": 0.0055533738090936535,
+          "mean_ci95": [
+            -0.034649951742109754,
+            0.07039627225414291
+          ]
+        },
+        "hd95_mm": {
+          "n_total": 10,
+          "n_defined": 9,
+          "n_undefined": 1,
+          "mean": -23.277245929725574,
+          "sample_sd": 51.481520695468575,
+          "median": 1.3911203838863626,
+          "q25": -49.75350764131437,
+          "q75": 4.017564360220774,
+          "mean_ci95": [
+            -58.3246415213578,
+            4.137501916162103
+          ]
+        },
+        "assd_mm": {
+          "n_total": 10,
+          "n_defined": 9,
+          "n_undefined": 1,
+          "mean": -2.5317990743741747,
+          "sample_sd": 15.669288014697187,
+          "median": 0.056247053803613056,
+          "q25": -9.222059617261326,
+          "q75": 1.1327736407226996,
+          "mean_ci95": [
+            -11.64469980431344,
+            7.116103890266557
+          ]
+        }
+      },
+      "liver_region_1_or_2": {
+        "dice": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.0396518001292851,
+          "sample_sd": 0.03950890842708928,
+          "median": -0.021997908045417625,
+          "q25": -0.044391132991825316,
+          "q75": -0.016421811599521496,
+          "mean_ci95": [
+            -0.06602583418056572,
+            -0.01964556911749422
+          ]
+        },
+        "iou": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.06516775303259723,
+          "sample_sd": 0.060186242563151963,
+          "median": -0.03765996756661799,
+          "q25": -0.07520901294279894,
+          "q75": -0.027981373554643696,
+          "mean_ci95": [
+            -0.10476195588423708,
+            -0.034126866264396725
+          ]
+        },
+        "precision": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": -0.0800609684119792,
+          "sample_sd": 0.06318269784810483,
+          "median": -0.05347152027398888,
+          "q25": -0.09093575145698135,
+          "q75": -0.039773765317284465,
+          "mean_ci95": [
+            -0.12122249471116786,
+            -0.04787898371813186
+          ]
+        },
+        "recall": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 0.015108889782321078,
+          "sample_sd": 0.005687087602240202,
+          "median": 0.015149266134221517,
+          "q25": 0.010566851658432769,
+          "q75": 0.01744703290261368,
+          "mean_ci95": [
+            0.011847572249881855,
+            0.01840935500780577
+          ]
+        },
+        "hd95_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 54.184006324752794,
+          "sample_sd": 60.05247877367083,
+          "median": 27.719979245096578,
+          "q25": 7.259757730136759,
+          "q75": 101.03804061266084,
+          "mean_ci95": [
+            20.22802367492695,
+            91.97128770001795
+          ]
+        },
+        "assd_mm": {
+          "n_total": 10,
+          "n_defined": 10,
+          "n_undefined": 0,
+          "mean": 7.92170126734418,
+          "sample_sd": 8.181286594076324,
+          "median": 3.0056038600898187,
+          "q25": 2.3565723705422528,
+          "q75": 14.044028366769568,
+          "mean_ci95": [
+            3.3298390726296745,
+            13.110436949014932
+          ]
+        }
+      }
+    },
+    "schema_version": 1,
+    "analyzed_at_utc": "2026-10-06T03:38:53.518015+00:00",
+    "left_evaluation_sha256": "35f78888bffdd63415afea74aeb6b279e6ce8c7b627b8e5ac10908da124e2508",
+    "right_evaluation_sha256": "38b09c1cf125a984533097dfd4bac09d00111ecb5e366d91c381eaacd9dd84eb"
+  }
+}

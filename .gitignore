@@ -1,0 +1,37 @@
+# Model artifacts and local runtime state
+app/radiology/lib/models/*
+!app/radiology/lib/models/.gitkeep
+app/radiology/model/*
+app/radiology/runtime/
+data/
+outputs/
+results/
+logs/
+tmp/
+*.pth
+*.pt
+*.nii
+*.nii.gz
+*.nrrd
+*.dcm
+*.mha
+*.mhd
+*.raw
+
+# Generated medical screenshots/figures are not reviewed source artifacts.
+*.png
+*.jpg
+*.jpeg
+
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.vscode/
+evaluation_test_*/
+provenance_test_*/
+panel_test_*/

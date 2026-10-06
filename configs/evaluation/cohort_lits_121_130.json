@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "cohort_id": "lits_121_130_retrospective_full_volume_v1",
+  "locked_at_utc": "2026-10-06T03:19:52.533884+00:00",
+  "purpose": "retrospective_test",
+  "input_extent": "full_volume_as_supplied",
+  "split_evidence": {
+    "status": "no_observed_id_overlap",
+    "model": "model_b",
+    "file_sha256": "e35937e7d4d57a3a8976e1b4c28a90cddfaf26b4fef2b550e924e5b271bb960b",
+    "fold": 0,
+    "training_case_count": 96,
+    "validation_case_count": 24,
+    "overlapping_case_ids": [],
+    "reason": "Filename-ID comparison only; checkpoint linkage and source/patient mapping must be independently verified",
+    "source_url": "https://drive.google.com/file/d/11ekse3GSJE-z07VZ_XjvjxHm9IHhaTLm/view",
+    "original_five_fold_file_sha256": "e6228b124180cd26c3e02d725d67361c201ac7d1ef72ba8a842648f59084d943",
+    "model_c_source_url": "https://drive.google.com/file/d/149moFPOTKZh91iP1JWKtnEk2QcTp8HdP/view",
+    "model_c_original_five_fold_file_sha256": "cfc0e6b9977cd4d7b187dd785f6ffd9b09ae5f572c240216619ad9277f450305",
+    "model_c_finetune_observed_id_overlap": []
+  },
+  "held_out_certified": false,
+  "limitation": "A locked manifest prevents silent case/file changes; it does not prove original scan completeness or absence of patient-level leakage",
+  "cases": [
+    {
+      "case_id": "LITS_121",
+      "image": "../../data/images/LITS_121_0000.nii.gz",
+      "reference": "../../data/reference/LITS_121.nii.gz",
+      "image_sha256": "2e01564b21b7017e871f7bb37363e8f47025a72625d9ce70ccbe53343164b286",
+      "reference_sha256": "b5407cef9e708c01ffaa646b9c48395f7e17b3c39f9a0abb3ce0363a1c3a3c4a",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          424
+        ],
+        "spacing_xyz_mm": [
+          0.744140625,
+          0.744140625,
+          1.5
+        ],
+        "origin_xyz_mm": [
+          -188.1279296875,
+          -321.1279296875,
+          200
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 120
+    },
+    {
+      "case_id": "LITS_122",
+      "image": "../../data/images/LITS_122_0000.nii.gz",
+      "reference": "../../data/reference/LITS_122.nii.gz",
+      "image_sha256": "0b55f50ef49f3dc87a9fec3a169badad649552f83c26a812c6c72d46e08309df",
+      "reference_sha256": "468a92425ff52349fbe7180dcb84e2aaba8df5d683f4f9dcf9eb863336ff56bf",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          463
+        ],
+        "spacing_xyz_mm": [
+          0.794921875,
+          0.794921875,
+          1.5
+        ],
+        "origin_xyz_mm": [
+          -202.1025390625,
+          -387.1025390625,
+          -670
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 121
+    },
+    {
+      "case_id": "LITS_123",
+      "image": "../../data/images/LITS_123_0000.nii.gz",
+      "reference": "../../data/reference/LITS_123.nii.gz",
+      "image_sha256": "4900d93c474f70e1ce23ae01e622f6ca40a8ab717188c8bacffecec7ea911e4e",
+      "reference_sha256": "7633a9d69900e5b5e9fb8134890ed5e0a9289eecf38f55760d2af9bb9cd8fe40",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          422
+        ],
+        "spacing_xyz_mm": [
+          0.689453125,
+          0.689453125,
+          1.5
+        ],
+        "origin_xyz_mm": [
+          -164.1552734375,
+          -327.1552734375,
+          503.5
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 122
+    },
+    {
+      "case_id": "LITS_124",
+      "image": "../../data/images/LITS_124_0000.nii.gz",
+      "reference": "../../data/reference/LITS_124.nii.gz",
+      "image_sha256": "3eda113a62fe642218d849a74a124d055512e7095a860a3e3ff28e8ffd6d7a43",
+      "reference_sha256": "390f75313e436cc393a9458e08128ea73ec64cc469417013562228853d67872c",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          432
+        ],
+        "spacing_xyz_mm": [
+          0.748046875,
+          0.748046875,
+          1.5
+        ],
+        "origin_xyz_mm": [
+          -194.1259765625,
+          -373.1259765625,
+          -553
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 123
+    },
+    {
+      "case_id": "LITS_125",
+      "image": "../../data/images/LITS_125_0000.nii.gz",
+      "reference": "../../data/reference/LITS_125.nii.gz",
+      "image_sha256": "393378ee2ea18fe316773d28aac53134969d6175e84019c36788b6e08e165dbc",
+      "reference_sha256": "d86b9707ebd05a62331dd0a91fa2e3c133d843dfd329e66107a1804dda66a68e",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          407
+        ],
+        "spacing_xyz_mm": [
+          0.69921875,
+          0.69921875,
+          1.5
+        ],
+        "origin_xyz_mm": [
+          -170.650390625,
+          -291.650390625,
+          650.5
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 124
+    },
+    {
+      "case_id": "LITS_126",
+      "image": "../../data/images/LITS_126_0000.nii.gz",
+      "reference": "../../data/reference/LITS_126.nii.gz",
+      "image_sha256": "852ee97615f39dd5ff4db86b156f21b216402efd3cf266eed8e92af480fdc679",
+      "reference_sha256": "e3f006c7d77b96e289a7ef05775b298677ff258cf60373a8b06cd38368356b2f",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          410
+        ],
+        "spacing_xyz_mm": [
+          0.712890625,
+          0.712890625,
+          1.5
+        ],
+        "origin_xyz_mm": [
+          -184.1435546875,
+          -340.1435546875,
+          1321.5
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 125
+    },
+    {
+      "case_id": "LITS_127",
+      "image": "../../data/images/LITS_127_0000.nii.gz",
+      "reference": "../../data/reference/LITS_127.nii.gz",
+      "image_sha256": "fa5a30f26706be6146ac18a58575ac930821f702238de16bc831fc9089664bd7",
+      "reference_sha256": "6d985cae5e1082bb82a68e2e8df5874f1ab7da775b6c2a6689793bb9411db005",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          401
+        ],
+        "spacing_xyz_mm": [
+          0.6640625,
+          0.6640625,
+          1.5
+        ],
+        "origin_xyz_mm": [
+          -180.66796875,
+          -343.66796875,
+          -589
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 126
+    },
+    {
+      "case_id": "LITS_128",
+      "image": "../../data/images/LITS_128_0000.nii.gz",
+      "reference": "../../data/reference/LITS_128.nii.gz",
+      "image_sha256": "082f475e1ce6af78109a0074c3030aeb4dccdd0bdac6974cadcaf5f20c7a9007",
+      "reference_sha256": "882d0f5c49e4e4ccc6460030096b0fe9e5e142d0ac92bb30b908ff6736d2a2b3",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          987
+        ],
+        "spacing_xyz_mm": [
+          0.771484375,
+          0.771484375,
+          0.699999988079071
+        ],
+        "origin_xyz_mm": [
+          -192.1142578125,
+          -323.1142578125,
+          -792.2000122070312
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 127
+    },
+    {
+      "case_id": "LITS_129",
+      "image": "../../data/images/LITS_129_0000.nii.gz",
+      "reference": "../../data/reference/LITS_129.nii.gz",
+      "image_sha256": "426c53bc215f29a7fe1230a696e7320a6dcd72b60e7edb5ffd88011fc8aa62c8",
+      "reference_sha256": "81e38ae83185ccf0d751bf76b26d952697fbe0cd78175656b0441700ef99f357",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          654
+        ],
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.699999988079071
+        ],
+        "origin_xyz_mm": [
+          -201,
+          -92,
+          12.60003662109375
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 128
+    },
+    {
+      "case_id": "LITS_130",
+      "image": "../../data/images/LITS_130_0000.nii.gz",
+      "reference": "../../data/reference/LITS_130.nii.gz",
+      "image_sha256": "d54dfe230e03516c1cbdbe6b4ce8ebdede79fdbd4e1ef13370e295a429f1c5e9",
+      "reference_sha256": "1a908d4f900e1158367a1882e1223c317acbc1c039e47f671ea76ddfc8abf229",
+      "geometry": {
+        "size_xyz": [
+          512,
+          512,
+          338
+        ],
+        "spacing_xyz_mm": [
+          0.705078125,
+          0.705078125,
+          0.699999988079071
+        ],
+        "origin_xyz_mm": [
+          -186.63699340820312,
+          -53,
+          111.1500015258789
+        ],
+        "direction": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "observed_split_membership": "unknown_or_outside_supplied_split",
+      "original_source_case_number": 129
+    }
+  ],
+  "path_layout": "Relative to this file: ../../data/images and ../../data/reference; obtain data separately.",
+  "source_mapping_evidence": "Original source case number = numeric LITS suffix minus one; verified by byte-identical SHA-256 of original and renamed images/references."
+}

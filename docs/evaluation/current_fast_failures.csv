@@ -1,0 +1,11 @@
+case_id,failure_flags,tumor_dice,missed_lesions,false_positive_lesions
+LITS_122,complete_tumor_miss;tumor_dice_below_0.5;unmatched_reference_lesions;unmatched_prediction_lesions;liver_region_dice_below_0.9,0.0,3,15
+LITS_128,complete_tumor_miss;tumor_dice_below_0.5;unmatched_reference_lesions;unmatched_prediction_lesions;liver_region_dice_below_0.9,0.0,1,1
+LITS_121,tumor_dice_below_0.5;unmatched_reference_lesions;unmatched_prediction_lesions;liver_region_dice_below_0.9,0.11791840853394839,3,18
+LITS_123,tumor_dice_below_0.5;unmatched_reference_lesions;unmatched_prediction_lesions;liver_region_dice_below_0.9,0.4481968361078397,10,8
+LITS_127,unmatched_prediction_lesions;liver_region_dice_below_0.9,0.6507858060689928,0,5
+LITS_126,unmatched_prediction_lesions,0.7639034627492131,0,4
+LITS_129,unmatched_reference_lesions;unmatched_prediction_lesions,0.7652404690587158,2,11
+LITS_124,unmatched_prediction_lesions,0.8315195937701859,0,8
+LITS_125,unmatched_reference_lesions;unmatched_prediction_lesions;liver_region_dice_below_0.9,0.8598348398122979,8,17
+LITS_130,unmatched_prediction_lesions,0.8663428070570984,0,9

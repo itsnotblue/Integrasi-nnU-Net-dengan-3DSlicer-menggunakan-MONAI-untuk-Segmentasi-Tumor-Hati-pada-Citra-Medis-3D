@@ -1,0 +1,24 @@
+schema_version: 1
+labels:
+  background: 0
+  liver: 1
+  lesion: 2
+models:
+  - key: nnunet_liver
+    local_directory: model_a
+    checkpoint: fold_0/checkpoint_best.pth
+    dataset_name: Dataset408_LTS
+    training_cases_recorded: 10
+    huggingface_path: model_a/fold_0/checkpoint_best.pth
+  - key: nnunet_liver_modelb
+    local_directory: model_b
+    checkpoint: fold_0/checkpoint_best.pth
+    dataset_name: Dataset406_LiT
+    training_cases_recorded: 120
+    huggingface_path: model_b/fold_0/checkpoint_best.pth
+  - key: nnunet_liver_modelc
+    local_directory: model_c
+    checkpoint: fold_0/checkpoint_best.pth
+    dataset_name: Dataset409_FnT
+    training_cases_recorded: 5
+    huggingface_path: model_c/fold_0/checkpoint_best.pth
