@@ -18,9 +18,9 @@ from validate_release import validate as real_validate
 
 class PublicationPreparationTests(unittest.TestCase):
     def setUp(self):
-        scratch = ROOT / "tmp/publication-preparation-tests"
-        scratch.mkdir(parents=True, exist_ok=True)
-        self.temporary = tempfile.TemporaryDirectory(dir=scratch)
+        # Nested Git fixtures must not inherit a long Windows checkout path.
+        self.temporary = tempfile.TemporaryDirectory(prefix="publication-tests-")
+        self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name)
         self.source = self.root / "source"
         self.models = self.root / "models"
